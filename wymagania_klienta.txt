@@ -1,0 +1,7 @@
+Wymagania klienta:
+- Możliwość logowania
+- Dodawania surowców
+- Dodawania użytkowników 
+- Dodawanie dostawców.
+- Baza danych
+- Możliwośc wydruku stanu magazynowego
