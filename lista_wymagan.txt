@@ -1,1 +1,16 @@
+1. Poziom wysoki
+Formularz dodający  surowce - Funkcjonalny 
+Możliwość zapisu danych - Funkcjonalny
+Formularz dodajacy dostawę - Funkcjonalny 
+
+2. Poziom średni
+Forumlarz dodający kontrahenta - Funkcjonalny 
+Możliwość wydruku stanu magazynu - Funkcjonalny 
+Możliwość wydruku aktualnej dostawy - Funkcjonalny 
+
+3. Poziom niski
+Panel logowania - Nie funckjonalne
+Podanie loginu i hasła - Nie funkcjonalne
+Możliwość usuwania danych - Funkcjonalny 
+Możliwość dodawania użytkowników przez Administratora - Funkcjonalny 
 
