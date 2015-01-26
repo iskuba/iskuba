@@ -32,9 +32,9 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(51, 22)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 12)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(130, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(169, 22)
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -42,7 +42,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.Label1.Location = New System.Drawing.Point(188, 26)
+        Me.Label1.Location = New System.Drawing.Point(196, 14)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(48, 17)
         Me.Label1.TabIndex = 1
@@ -52,7 +52,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.Label2.Location = New System.Drawing.Point(188, 54)
+        Me.Label2.Location = New System.Drawing.Point(195, 43)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 17)
         Me.Label2.TabIndex = 3
@@ -61,10 +61,10 @@ Partial Class Form1
         'MaskedTextBox1
         '
         Me.MaskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(51, 51)
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(12, 41)
         Me.MaskedTextBox1.Name = "MaskedTextBox1"
         Me.MaskedTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(130, 22)
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(169, 22)
         Me.MaskedTextBox1.TabIndex = 4
         Me.MaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -72,7 +72,7 @@ Partial Class Form1
         '
         Me.Button1.Image = Global.Projekt.My.Resources.Resources.key
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(12, 82)
+        Me.Button1.Location = New System.Drawing.Point(12, 69)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(232, 39)
         Me.Button1.TabIndex = 5
@@ -84,7 +84,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(256, 133)
+        Me.ClientSize = New System.Drawing.Size(256, 118)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MaskedTextBox1)
         Me.Controls.Add(Me.Label2)

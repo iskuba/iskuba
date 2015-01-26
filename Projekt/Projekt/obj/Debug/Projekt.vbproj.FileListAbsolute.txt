@@ -7,3 +7,5 @@ H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.vbproj.GenerateRes
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.exe
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.xml
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.pdb
+H:\InzynieriaOprogramowania\Projekt\Projekt\bin\Debug\Projekt.exe.config
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.info.resources
