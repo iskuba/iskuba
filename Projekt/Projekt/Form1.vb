@@ -1,7 +1,14 @@
-﻿Public Class Form1
+﻿
+
+Public Class Form1
+
+
 
 
     Public query As New Connection
+    Public user As New currentUser
+
+
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -39,8 +46,11 @@
             tabela = wynik
 
             If tabela.Rows.Count > 0 Then
+                user.idusr = tabela.Rows(0).Item("idprc")
+                user.isadmin = tabela.Rows(0).Item("admin")
                 menuERP.ShowDialog()
             Else
+                user = Nothing
                 MsgBox("Podane dane są błędne!")
                 Exit Sub
             End If
