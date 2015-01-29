@@ -34,7 +34,7 @@ ControlStyles.DoubleBuffer, True)
             wynik = Form1.query.wykonajZapytanie("SELECT * FROM kntkarty")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
-                DataGridView1.Columns(0).Visible = False
+                DataGridView1.Columns("id").Visible = False
             End If
 
             sortuj()
@@ -85,11 +85,11 @@ ControlStyles.DoubleBuffer, True)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Try
-
+      
             If IsNothing(DataGridView1.CurrentRow) Then
 
             Else
+                On Error Resume Next
                 dodajedytujkon.Close()
                 dodajedytujkon.id = DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value
                 dodajedytujkon.TextBox1.Text = DataGridView1.Item("nazwa", DataGridView1.CurrentRow.Index).Value
@@ -105,9 +105,7 @@ ControlStyles.DoubleBuffer, True)
                 dodajedytujkon.Show()
 
             End If
-        Catch ex As Exception
-             dodajedytujkon.Show()
-        End Try
+     
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -130,7 +128,7 @@ ControlStyles.DoubleBuffer, True)
 
 
                 Dim wynik As Object
-                wynik = Form1.query.wykonajZapytanie("SELECT * FROM  tranag where idkontrahenta")
+                wynik = Form1.query.wykonajZapytanie("SELECT * FROM  tranag where idkontrahenta=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
 
                 If wynik.GetType.FullName = GetType(DataTable).FullName Then
                     Dim tabela As DataTable
@@ -139,7 +137,7 @@ ControlStyles.DoubleBuffer, True)
 
                     If tabela.Rows.Count > 0 Then
 
-                        MsgBox("Istnieją tranzakcje na tego kontrahenta. Usówanie rekordu zostanie anulowane !")
+                        MsgBox("Istnieją tranzakcje na tego kontrahenta. Usuwanie rekordu zostanie anulowane !")
                     Else
 
                         Form1.query.executeQuery("DELETE FROM KNTKARTY where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")

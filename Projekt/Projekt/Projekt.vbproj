@@ -71,6 +71,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.vb" />
+    <Compile Include="dodajedytujprc.Designer.vb">
+      <DependentUpon>dodajedytujprc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dodajedytujprc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listapracownikow.Designer.vb">
+      <DependentUpon>listapracownikow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listapracownikow.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="currentUser.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -112,14 +124,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Resources\dodajedytujkon.Designer.vb">
+    <Compile Include="dodajedytujkon.Designer.vb">
       <DependentUpon>dodajedytujkon.vb</DependentUpon>
     </Compile>
-    <Compile Include="Resources\dodajedytujkon.vb">
+    <Compile Include="dodajedytujkon.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="dodajedytujprc.resx">
+      <DependentUpon>dodajedytujprc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listapracownikow.resx">
+      <DependentUpon>listapracownikow.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -138,7 +156,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\dodajedytujkon.resx">
+    <EmbeddedResource Include="dodajedytujkon.resx">
       <DependentUpon>dodajedytujkon.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -186,6 +204,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %28Kopiowanie%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

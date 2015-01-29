@@ -43,6 +43,10 @@ Projekt
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Projekt.My.Resources.Resources.face1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Projekt.My.Resources.Resources.key">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -52,6 +56,10 @@ Projekt
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Projekt.My.Resources.Resources.pinion_settings_icon">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Projekt.My.Resources.Resources.user__Kopiowanie_">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

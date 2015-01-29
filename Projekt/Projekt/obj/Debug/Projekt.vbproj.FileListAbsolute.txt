@@ -12,3 +12,5 @@ H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.menuERP.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.Form1.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.ListaKontrahentow.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujkon.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujprc.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.listapracownikow.resources
