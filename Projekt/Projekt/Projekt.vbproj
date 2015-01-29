@@ -85,6 +85,12 @@
     <Compile Include="info.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ListaKontrahentow.Designer.vb">
+      <DependentUpon>ListaKontrahentow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaKontrahentow.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="menuERP.Designer.vb">
       <DependentUpon>menuERP.vb</DependentUpon>
     </Compile>
@@ -106,6 +112,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Resources\dodajedytujkon.Designer.vb">
+      <DependentUpon>dodajedytujkon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\dodajedytujkon.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -113,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="info.resx">
       <DependentUpon>info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaKontrahentow.resx">
+      <DependentUpon>ListaKontrahentow.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuERP.resx">
       <DependentUpon>menuERP.vb</DependentUpon>
@@ -122,6 +137,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\dodajedytujkon.resx">
+      <DependentUpon>dodajedytujkon.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +177,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pinion-settings-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-edit-delete-icon23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

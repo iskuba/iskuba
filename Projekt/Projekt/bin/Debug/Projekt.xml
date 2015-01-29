@@ -15,6 +15,14 @@ Projekt
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:Projekt.My.Resources.Resources.Actions_edit_delete_icon23">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Projekt.My.Resources.Resources.add">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Projekt.My.Resources.Resources.content">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -24,6 +32,10 @@ Projekt
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Projekt.My.Resources.Resources.dokument">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Projekt.My.Resources.Resources.edit">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
