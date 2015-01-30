@@ -71,6 +71,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.vb" />
+    <Compile Include="dodajedytujlogin.Designer.vb">
+      <DependentUpon>dodajedytujlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dodajedytujlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listaloginow.Designer.vb">
+      <DependentUpon>listaloginow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listaloginow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dodajedytujtowar.Designer.vb">
+      <DependentUpon>dodajedytujtowar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dodajedytujtowar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listatowarow.Designer.vb">
+      <DependentUpon>listatowarow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listatowarow.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="dodajedytujprc.Designer.vb">
       <DependentUpon>dodajedytujprc.vb</DependentUpon>
     </Compile>
@@ -132,6 +156,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="dodajedytujlogin.resx">
+      <DependentUpon>dodajedytujlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listaloginow.resx">
+      <DependentUpon>listaloginow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dodajedytujtowar.resx">
+      <DependentUpon>dodajedytujtowar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listatowarow.resx">
+      <DependentUpon>listatowarow.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dodajedytujprc.resx">
       <DependentUpon>dodajedytujprc.vb</DependentUpon>
     </EmbeddedResource>

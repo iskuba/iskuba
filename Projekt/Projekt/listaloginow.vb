@@ -1,5 +1,4 @@
-﻿Public Class listatowarow
-
+﻿Public Class listaloginow
 
     Public Sub ListaKontrahentow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
@@ -32,10 +31,13 @@ ControlStyles.DoubleBuffer, True)
 
 
             Dim wynik As Object
-            wynik = Form1.query.wykonajZapytanie("SELECT * FROM twrkarty")
+            wynik = Form1.query.wykonajZapytanie("SELECT * FROM usr")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
-                DataGridView1.Columns("id").Visible = False
+                DataGridView1.Columns("id_usr").Visible = False
+                DataGridView1.Columns("haslo").Visible = False
+                DataGridView1.Columns("idprc").Visible = False
+                DataGridView1.Columns("admin").Visible = False
             End If
 
             sortuj()
@@ -59,7 +61,7 @@ ControlStyles.DoubleBuffer, True)
         '' MsgBox("Kod_Towaru " & kod & " and Numer_Zlecenia " & zw & "")
         ''    MsgBox("Twr_Kod like '" & TextBox1.Text & "%' and NumerZlecenia like '" & TextBox2.Text & "%'and Dostawa like '" & TextBox3.Text & "%' and NumerPrzewodnika like '" & TextBox4.Text & "%' and  " & rw & "")
 
-        table2.DefaultView.RowFilter = "twrkod like '" & TextBox1.Text & "%' and twrnazwa like '" & TextBox2.Text & "%' "
+        table2.DefaultView.RowFilter = "akronim like '" & TextBox1.Text & "%' "
 
 
 
@@ -75,13 +77,13 @@ ControlStyles.DoubleBuffer, True)
         sortuj()
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs)
         sortuj()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        dodajedytujtowar.Close()
-        dodajedytujtowar.Show()
+        dodajedytujlogin.Close()
+        dodajedytujlogin.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -91,12 +93,20 @@ ControlStyles.DoubleBuffer, True)
 
         Else
             On Error Resume Next
-            dodajedytujtowar.Close()
-            dodajedytujtowar.id = DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value
-            dodajedytujtowar.TextBox1.Text = DataGridView1.Item("twrkod", DataGridView1.CurrentRow.Index).Value
-            dodajedytujtowar.TextBox2.Text = DataGridView1.Item("twrnazwa", DataGridView1.CurrentRow.Index).Value
-            dodajedytujtowar.ComboBox1.Text = DataGridView1.Item("jmz", DataGridView1.CurrentRow.Index).Value
-            dodajedytujtowar.Show()
+            dodajedytujprc.Close()
+            dodajedytujlogin.id = DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value
+            dodajedytujlogin.TextBox1.Text = DataGridView1.Item("akronim", DataGridView1.CurrentRow.Index).Value
+
+            Dim haslo As Byte()
+            haslo = System.Convert.FromBase64String(DataGridView1.Item("haslo", DataGridView1.CurrentRow.Index).Value)
+            dodajedytujlogin.MaskedTextBox1.Text = System.Text.Encoding.UTF8.GetString(haslo)
+
+            If DataGridView1.Item("admin", DataGridView1.CurrentRow.Index).Value = 1 Then
+                dodajedytujlogin.CheckBox1.Checked = True
+            Else
+                dodajedytujlogin.CheckBox1.Checked = False
+            End If
+            dodajedytujlogin.Show()
 
         End If
 
@@ -111,7 +121,7 @@ ControlStyles.DoubleBuffer, True)
 
                 Dim result As Integer
 
-                result = MsgBox("Czy na pewno chcesz usunąć wybrany towar ?", vbYesNo)
+                result = MsgBox("Czy na pewno chcesz usunąć login ?", vbYesNo)
 
                 If result = 6 Then
 
@@ -121,24 +131,9 @@ ControlStyles.DoubleBuffer, True)
                 End If
 
 
-                Dim wynik As Object
-                wynik = Form1.query.wykonajZapytanie("SELECT * FROM  TraElem where idtwr =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
-
-                If wynik.GetType.FullName = GetType(DataTable).FullName Then
-                    Dim tabela As DataTable
-
-                    tabela = wynik
-
-                    If tabela.Rows.Count > 0 Then
-
-                        MsgBox("Istnieją wiązania z wybranym towarem. Usuwanie rekordu zostanie anulowane !")
-                    Else
-                        Form1.query.executeQuery("DELETE FROM twrkarty where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+            
+                Form1.query.executeQuery("DELETE FROM usr where id_usr=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
                         Me.ListaKontrahentow_Load(sender, e)
-                    End If
-
-
-                End If
 
             End If
         Catch ex As Exception

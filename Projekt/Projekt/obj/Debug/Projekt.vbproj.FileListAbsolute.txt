@@ -14,3 +14,7 @@ H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.ListaKontrahentow.
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujkon.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujprc.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.listapracownikow.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.listatowarow.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujtowar.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.listaloginow.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujlogin.resources
