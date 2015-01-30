@@ -42,3 +42,7 @@ H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.vbproj
 H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.dodajedytujdostawe.resources
 H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.vbprojResolveAssemblyReference.cache
 H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.raport.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.vbprojResolveAssemblyReference.cache
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujdostawe.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.listadostaw.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.raport.resources
