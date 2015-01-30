@@ -39,7 +39,7 @@ Public Class Form1
 
         Dim wynik As Object
 
-        wynik = query.wykonajZapytanie("SELECT * from usr WHERE haslo ='" & haslo & "' and akronim='" & TextBox1.Text & "'")
+        wynik = query.wykonajZapytanie("SELECT idprc,admin from usr WHERE haslo ='" & haslo & "' and akronim='" & TextBox1.Text & "'")
 
         If wynik.GetType.FullName = GetType(DataTable).FullName Then
             Dim tabela As DataTable

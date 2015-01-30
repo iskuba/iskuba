@@ -83,7 +83,7 @@ Partial Class menuERP
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(300, 58)
         Me.Button3.TabIndex = 3
-        Me.Button3.Text = "DOKUMENTY"
+        Me.Button3.Text = "DOSTAWY"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button3.UseVisualStyleBackColor = False
         '

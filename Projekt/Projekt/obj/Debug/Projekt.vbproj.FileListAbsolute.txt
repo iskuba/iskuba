@@ -14,19 +14,31 @@ H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.ListaKontrahentow.
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujkon.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujprc.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.listapracownikow.resources
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\bin\Debug\Projekt.exe.config
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.xml
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\bin\Debug\Projekt.exe
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\bin\Debug\Projekt.pdb
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\bin\Debug\Projekt.xml
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.dodajedytujprc.resources
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.listapracownikow.resources
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.Form1.resources
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.info.resources
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.ListaKontrahentow.resources
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.menuERP.resources
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.Resources.resources
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.dodajedytujkon.resources
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.vbproj.GenerateResource.Cache
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.exe
-C:\Users\Kuba\Desktop\Studia\iskuba\Projekt\Projekt\obj\Debug\Projekt.pdb
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.listatowarow.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujtowar.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.listaloginow.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujlogin.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\bin\Debug\Projekt.exe.config
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.exe
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.xml
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.pdb
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\bin\Debug\Projekt.exe
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\bin\Debug\Projekt.pdb
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\bin\Debug\Projekt.xml
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.listadostaw.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.dodajedytujlogin.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.listaloginow.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.dodajedytujtowar.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.listatowarow.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.dodajedytujprc.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.listapracownikow.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.Form1.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.info.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.ListaKontrahentow.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.menuERP.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.Resources.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.dodajedytujkon.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.vbproj.GenerateResource.Cache
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.dodajedytujdostawe.resources
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.vbprojResolveAssemblyReference.cache
+H:\InzynieriaOprogramowania - Kopia (2)\Projekt\Projekt\obj\Debug\Projekt.raport.resources
