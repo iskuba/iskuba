@@ -31,7 +31,7 @@ ControlStyles.DoubleBuffer, True)
 
 
             Dim wynik As Object
-            wynik = Form1.query.wykonajZapytanie("SELECT * FROM usr")
+            wynik = login.query.wykonajZapytanie("SELECT * FROM usr")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
                 DataGridView1.Columns("id_usr").Visible = False
@@ -131,9 +131,9 @@ ControlStyles.DoubleBuffer, True)
                 End If
 
 
-            
-                Form1.query.executeQuery("DELETE FROM usr where id_usr=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
-                        Me.ListaKontrahentow_Load(sender, e)
+
+                login.query.executeQuery("DELETE FROM usr where id_usr=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                Me.ListaKontrahentow_Load(sender, e)
 
             End If
         Catch ex As Exception

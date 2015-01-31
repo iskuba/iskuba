@@ -21,11 +21,11 @@
 
 
         If id = 0 Then '' jeżeli ID = 0 to oznacza ze tworzymy nowy rekord
-            Form1.query.executeQuery("INSERT INTO kntKarty (nazwa,miejscowosc,kodpocztowy,telefon,nrlokalu,ulica) VALUES ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "-" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "')")
+            login.query.executeQuery("INSERT INTO kntKarty (nazwa,miejscowosc,kodpocztowy,telefon,nrlokalu,ulica) VALUES ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "-" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "')")
             MsgBox("Dodano Rekord !")
             ListaKontrahentow.ListaKontrahentow_Load(sender, e)
         Else
-            Form1.query.executeQuery("UPDATE  kntKarty set nazwa= '" & TextBox1.Text & "',miejscowosc='" & TextBox2.Text & "',kodpocztowy='" & TextBox3.Text & "-" & TextBox4.Text & "',telefon='" & TextBox5.Text & "',nrlokalu='" & TextBox6.Text & "',ulica='" & TextBox7.Text & "' WHERE id=" & id & "")
+            login.query.executeQuery("UPDATE  kntKarty set nazwa= '" & TextBox1.Text & "',miejscowosc='" & TextBox2.Text & "',kodpocztowy='" & TextBox3.Text & "-" & TextBox4.Text & "',telefon='" & TextBox5.Text & "',nrlokalu='" & TextBox6.Text & "',ulica='" & TextBox7.Text & "' WHERE id=" & id & "")
             MsgBox("Rekord Został Zaktualizoany !")
             ListaKontrahentow.ListaKontrahentow_Load(sender, e)
         End If

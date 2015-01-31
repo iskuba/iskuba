@@ -34,7 +34,7 @@ ControlStyles.DoubleBuffer, True)
 
 
             Dim wynik As Object
-            wynik = Form1.query.wykonajZapytanie("SELECT twrkarty.id as id,twrkod,twrnazwa,jmz,sum(ilosc) as iloscDostaw  FROM twrkarty LEFT JOIN traelem ON twrkarty.id = traelem.idtwr GROUP BY twrkarty.id,twrkod,twrnazwa,jmz;")
+            wynik = login.query.wykonajZapytanie("SELECT twrkarty.id as id,twrkod,twrnazwa,jmz,sum(ilosc) as iloscDostaw  FROM twrkarty LEFT JOIN traelem ON twrkarty.id = traelem.idtwr GROUP BY twrkarty.id,twrkod,twrnazwa,jmz;")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
                 DataGridView1.Columns("id").Visible = False
@@ -126,7 +126,7 @@ ControlStyles.DoubleBuffer, True)
 
 
                 Dim wynik As Object
-                wynik = Form1.query.wykonajZapytanie("SELECT * FROM  TraElem where idtwr =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                wynik = login.query.wykonajZapytanie("SELECT * FROM  TraElem where idtwr =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
 
                 If wynik.GetType.FullName = GetType(DataTable).FullName Then
                     Dim tabela As DataTable
@@ -137,7 +137,7 @@ ControlStyles.DoubleBuffer, True)
 
                         MsgBox("Istnieją wiązania z wybranym towarem. Usuwanie rekordu zostanie anulowane !")
                     Else
-                        Form1.query.executeQuery("DELETE FROM twrkarty where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                        login.query.executeQuery("DELETE FROM twrkarty where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
                         Me.ListaKontrahentow_Load(sender, e)
                     End If
 

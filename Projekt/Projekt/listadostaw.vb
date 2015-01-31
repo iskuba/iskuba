@@ -31,7 +31,7 @@ ControlStyles.DoubleBuffer, True)
 
 
             Dim wynik As Object
-            wynik = Form1.query.wykonajZapytanie("SELECT traelem.id as id ,twrkod,twrnazwa,ilosc,nazwa as Kontrahent,data FROM (traelem INNER JOIN twrkarty ON traelem.idtwr = twrkarty.id) INNER JOIN kntkarty ON traelem.iddost = kntkarty.id")
+            wynik = login.query.wykonajZapytanie("SELECT traelem.id as id ,twrkod,twrnazwa,ilosc,nazwa as Kontrahent,data FROM (traelem INNER JOIN twrkarty ON traelem.idtwr = twrkarty.id) INNER JOIN kntkarty ON traelem.iddost = kntkarty.id")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
                 DataGridView1.Columns("id").Visible = False
@@ -119,9 +119,9 @@ ControlStyles.DoubleBuffer, True)
                 End If
 
 
-          
 
-                Form1.query.executeQuery("DELETE FROM traelem where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+
+                login.query.executeQuery("DELETE FROM traelem where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
                 Me.ListaKontrahentow_Load(sender, e)
 
 

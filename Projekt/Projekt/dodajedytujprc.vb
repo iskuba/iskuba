@@ -27,11 +27,11 @@
 
 
         If id = 0 Then '' jeżeli ID = 0 to oznacza ze tworzymy nowy rekord
-            Form1.query.executeQuery("INSERT INTO prckarty (imie,miejscowosc,kodpocztowy,telefon,nrlokalu,ulica,nazwisko) VALUES ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "-" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "','" & TextBox8.Text & "')")
+            login.query.executeQuery("INSERT INTO prckarty (imie,miejscowosc,kodpocztowy,telefon,nrlokalu,ulica,nazwisko) VALUES ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "-" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "','" & TextBox8.Text & "')")
             MsgBox("Dodano Rekord !")
             listapracownikow.ListaKontrahentow_Load(sender, e)
         Else
-            Form1.query.executeQuery("UPDATE  prckarty set imie= '" & TextBox1.Text & "',miejscowosc='" & TextBox2.Text & "',kodpocztowy='" & TextBox3.Text & "-" & TextBox4.Text & "',telefon='" & TextBox5.Text & "',nrlokalu='" & TextBox6.Text & "',ulica='" & TextBox7.Text & "' ,nazwisko='" & TextBox8.Text & "' WHERE idprc=" & id & "")
+            login.query.executeQuery("UPDATE  prckarty set imie= '" & TextBox1.Text & "',miejscowosc='" & TextBox2.Text & "',kodpocztowy='" & TextBox3.Text & "-" & TextBox4.Text & "',telefon='" & TextBox5.Text & "',nrlokalu='" & TextBox6.Text & "',ulica='" & TextBox7.Text & "' ,nazwisko='" & TextBox8.Text & "' WHERE idprc=" & id & "")
             MsgBox("Rekord Został Zaktualizoany !")
             listapracownikow.ListaKontrahentow_Load(sender, e)
         End If

@@ -22,11 +22,11 @@
 
 
         If id = 0 Then '' jeżeli ID = 0 to oznacza ze tworzymy nowy rekord
-            Form1.query.executeQuery("INSERT INTO twrkarty (twrkod,twrnazwa,jmz) VALUES ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & ComboBox1.Text & "')")
+            login.query.executeQuery("INSERT INTO twrkarty (twrkod,twrnazwa,jmz) VALUES ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & ComboBox1.Text & "')")
             MsgBox("Dodano Rekord !")
             listatowarow.ListaKontrahentow_Load(sender, e)
         Else
-            Form1.query.executeQuery("UPDATE  twrKarty set twrkod= '" & TextBox1.Text & "',twrnazwa='" & TextBox2.Text & "',jmz='" & ComboBox1.Text & "' WHERE id=" & id & "")
+            login.query.executeQuery("UPDATE  twrKarty set twrkod= '" & TextBox1.Text & "',twrnazwa='" & TextBox2.Text & "',jmz='" & ComboBox1.Text & "' WHERE id=" & id & "")
             MsgBox("Rekord Został Zaktualizoany !")
             listatowarow.ListaKontrahentow_Load(sender, e)
         End If

@@ -31,7 +31,7 @@ ControlStyles.DoubleBuffer, True)
 
 
             Dim wynik As Object
-            wynik = Form1.query.wykonajZapytanie("SELECT * FROM prckarty")
+            wynik = login.query.wykonajZapytanie("SELECT * FROM prckarty")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
                 DataGridView1.Columns("idprc").Visible = False
@@ -129,7 +129,7 @@ ControlStyles.DoubleBuffer, True)
 
 
                 Dim wynik As Object
-                wynik = Form1.query.wykonajZapytanie("SELECT idprc FROM  usr where idprc =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & " UNION ALL SELECT idpracownika FROM TraNag Where idpracownika =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                wynik = login.query.wykonajZapytanie("SELECT idprc FROM  usr where idprc =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & " UNION ALL SELECT idpracownika FROM TraNag Where idpracownika =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
 
                 If wynik.GetType.FullName = GetType(DataTable).FullName Then
                     Dim tabela As DataTable
@@ -141,7 +141,7 @@ ControlStyles.DoubleBuffer, True)
                         MsgBox("Istnieją wiązania z wybranym pracownikiem. Usuwanie rekordu zostanie anulowane !")
                     Else
 
-                        Form1.query.executeQuery("DELETE FROM prckarty where idprc=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                        login.query.executeQuery("DELETE FROM prckarty where idprc=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
                         Me.ListaKontrahentow_Load(sender, e)
                     End If
 

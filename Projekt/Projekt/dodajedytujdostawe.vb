@@ -20,11 +20,11 @@
 
 
         If id = 0 Then '' jeżeli ID = 0 to oznacza ze tworzymy nowy rekord
-            Form1.query.executeQuery("INSERT INTO traelem (idtwr,ilosc,iddost) VALUES (" & ComboBox1.SelectedValue & "," & TextBox1.Text & "," & ComboBox2.SelectedValue & ")")
+            login.query.executeQuery("INSERT INTO traelem (idtwr,ilosc,iddost) VALUES (" & ComboBox1.SelectedValue & "," & TextBox1.Text & "," & ComboBox2.SelectedValue & ")")
             MsgBox("Dodano Rekord !")
             listadostaw.ListaKontrahentow_Load(sender, e)
         Else
-            Form1.query.executeQuery("UPDATE traelem set idtwr= " & ComboBox1.SelectedValue & ",ilosc=" & TextBox1.Text & ",iddost=" & ComboBox2.SelectedValue & " WHERE id=" & id & "")
+            login.query.executeQuery("UPDATE traelem set idtwr= " & ComboBox1.SelectedValue & ",ilosc=" & TextBox1.Text & ",iddost=" & ComboBox2.SelectedValue & " WHERE id=" & id & "")
             MsgBox("Rekord Został Zaktualizoany !")
             listadostaw.ListaKontrahentow_Load(sender, e)
         End If
@@ -39,7 +39,7 @@
 
         Dim wynik As Object
 
-        wynik = Form1.query.wykonajZapytanie("SELECT id, twrkod  FROM twrkarty")
+        wynik = login.query.wykonajZapytanie("SELECT id, twrkod  FROM twrkarty")
 
         If wynik.GetType.FullName = GetType(DataTable).FullName Then
 
@@ -62,7 +62,7 @@
 
         End If
 
-        wynik = Form1.query.wykonajZapytanie("SELECT id, nazwa  FROM kntkarty")
+        wynik = login.query.wykonajZapytanie("SELECT id, nazwa  FROM kntkarty")
 
         If wynik.GetType.FullName = GetType(DataTable).FullName Then
 

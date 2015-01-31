@@ -31,7 +31,7 @@ ControlStyles.DoubleBuffer, True)
 
 
             Dim wynik As Object
-            wynik = Form1.query.wykonajZapytanie("SELECT * FROM kntkarty")
+            wynik = login.query.wykonajZapytanie("SELECT * FROM kntkarty")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
                 DataGridView1.Columns("id").Visible = False
@@ -51,7 +51,7 @@ ControlStyles.DoubleBuffer, True)
     Sub sortuj()
         Dim table2 As DataTable
         table2 = DataGridView1.DataSource
-      
+
 
 
 
@@ -85,27 +85,27 @@ ControlStyles.DoubleBuffer, True)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-      
-            If IsNothing(DataGridView1.CurrentRow) Then
 
-            Else
-                On Error Resume Next
-                dodajedytujkon.Close()
-                dodajedytujkon.id = DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value
-                dodajedytujkon.TextBox1.Text = DataGridView1.Item("nazwa", DataGridView1.CurrentRow.Index).Value
-                dodajedytujkon.TextBox2.Text = DataGridView1.Item("miejscowosc", DataGridView1.CurrentRow.Index).Value
-                Dim kod As String
+        If IsNothing(DataGridView1.CurrentRow) Then
 
-                kod = DataGridView1.Item("kodpocztowy", DataGridView1.CurrentRow.Index).Value
-                dodajedytujkon.TextBox3.Text = kod(0)
-                dodajedytujkon.TextBox4.Text = kod(1)
-                dodajedytujkon.TextBox5.Text = DataGridView1.Item("telefon", DataGridView1.CurrentRow.Index).Value
-                dodajedytujkon.TextBox6.Text = DataGridView1.Item("nrlokalu", DataGridView1.CurrentRow.Index).Value
-                dodajedytujkon.TextBox7.Text = DataGridView1.Item("ulica", DataGridView1.CurrentRow.Index).Value
-                dodajedytujkon.Show()
+        Else
+            On Error Resume Next
+            dodajedytujkon.Close()
+            dodajedytujkon.id = DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value
+            dodajedytujkon.TextBox1.Text = DataGridView1.Item("nazwa", DataGridView1.CurrentRow.Index).Value
+            dodajedytujkon.TextBox2.Text = DataGridView1.Item("miejscowosc", DataGridView1.CurrentRow.Index).Value
+            Dim kod As String
 
-            End If
-     
+            kod = DataGridView1.Item("kodpocztowy", DataGridView1.CurrentRow.Index).Value
+            dodajedytujkon.TextBox3.Text = kod(0)
+            dodajedytujkon.TextBox4.Text = kod(1)
+            dodajedytujkon.TextBox5.Text = DataGridView1.Item("telefon", DataGridView1.CurrentRow.Index).Value
+            dodajedytujkon.TextBox6.Text = DataGridView1.Item("nrlokalu", DataGridView1.CurrentRow.Index).Value
+            dodajedytujkon.TextBox7.Text = DataGridView1.Item("ulica", DataGridView1.CurrentRow.Index).Value
+            dodajedytujkon.Show()
+
+        End If
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -128,7 +128,7 @@ ControlStyles.DoubleBuffer, True)
 
 
                 Dim wynik As Object
-                wynik = Form1.query.wykonajZapytanie("SELECT * FROM  tranag where idkontrahenta=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                wynik = login.query.wykonajZapytanie("SELECT * FROM  tranag where idkontrahenta=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
 
                 If wynik.GetType.FullName = GetType(DataTable).FullName Then
                     Dim tabela As DataTable
@@ -140,7 +140,7 @@ ControlStyles.DoubleBuffer, True)
                         MsgBox("Istnieją tranzakcje na tego kontrahenta. Usuwanie rekordu zostanie anulowane !")
                     Else
 
-                        Form1.query.executeQuery("DELETE FROM KNTKARTY where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                        login.query.executeQuery("DELETE FROM KNTKARTY where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
                         Me.ListaKontrahentow_Load(sender, e)
                     End If
 

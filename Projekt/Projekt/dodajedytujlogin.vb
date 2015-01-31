@@ -41,11 +41,11 @@
 
 
         If id = 0 Then '' jeżeli ID = 0 to oznacza ze tworzymy nowy rekord
-            Form1.query.executeQuery("INSERT INTO usr (akronim,haslo,admin,idprc) VALUES ('" & TextBox1.Text & "','" & haslo & "'," & admin & "," & ComboBox1.SelectedValue & ")")
+            login.query.executeQuery("INSERT INTO usr (akronim,haslo,admin,idprc) VALUES ('" & TextBox1.Text & "','" & haslo & "'," & admin & "," & ComboBox1.SelectedValue & ")")
             MsgBox("Dodano Rekord !")
             listaloginow.ListaKontrahentow_Load(sender, e)
         Else
-            Form1.query.executeQuery("UPDATE  usr set akronim= '" & TextBox1.Text & "',haslo='" & haslo & "',admin=" & admin & ", idprc=" & ComboBox1.SelectedValue & " WHERE id_usr=" & id & "")
+            login.query.executeQuery("UPDATE  usr set akronim= '" & TextBox1.Text & "',haslo='" & haslo & "',admin=" & admin & ", idprc=" & ComboBox1.SelectedValue & " WHERE id_usr=" & id & "")
             MsgBox("Rekord Został Zaktualizoany !")
             listaloginow.ListaKontrahentow_Load(sender, e)
         End If
@@ -60,7 +60,7 @@
 
         Dim wynik As Object
 
-        wynik = Form1.query.wykonajZapytanie("SELECT idprc, imie + ' ' + nazwisko as nazwa FROM prckarty")
+        wynik = login.query.wykonajZapytanie("SELECT idprc, imie + ' ' + nazwisko as nazwa FROM prckarty")
 
         If wynik.GetType.FullName = GetType(DataTable).FullName Then
 

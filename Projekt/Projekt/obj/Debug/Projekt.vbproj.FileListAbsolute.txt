@@ -9,7 +9,6 @@ H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.pdb
 H:\InzynieriaOprogramowania\Projekt\Projekt\bin\Debug\Projekt.exe.config
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.info.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.menuERP.resources
-H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.Form1.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.ListaKontrahentow.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujkon.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujprc.resources
@@ -46,3 +45,4 @@ H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.vbprojResolveAssem
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.dodajedytujdostawe.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.listadostaw.resources
 H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.raport.resources
+H:\InzynieriaOprogramowania\Projekt\Projekt\obj\Debug\Projekt.login.resources
