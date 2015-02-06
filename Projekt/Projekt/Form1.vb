@@ -1,9 +1,22 @@
-﻿Public Class login
+﻿
+''' <summary>
+''' Klasa ktora odtwarzana jest na poczatku aplikacji.  Dzieki tej klasie logujemy
+''' sie do systemu ERP
+''' </summary>
+Public Class login
 
+    ''' <summary>
+    ''' Zmienna typu Connection.
+    ''' </summary>
     Private query As New Connection
+    ''' <summary>
+    ''' Zmienna typu currentUser.
+    ''' </summary>
     Private user As New currentUser
 
-
+    ''' <summary>
+    ''' Metoda ładująca okno klasy
+    ''' </summary>
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         query.SetConnectionString( _
     "Provider=Microsoft.Jet.OLEDB.4.0;User Id= zbud; Password=z; Data source=" & _
@@ -12,15 +25,26 @@
     End Sub
 
 
-
+    ''' <summary>
+    ''' Metoda zwracająca przez referencję zmieną query
+    ''' </summary>
     Function returnQuery() As Connection
         Return query
     End Function
-
+    ''' <summary>
+    ''' 
+    ''' Metoda zwracająca przez referencję zmieną user
+    ''' </summary>
     Function CurrentUser() As currentUser
         Return user
     End Function
 
+
+    ''' <summary>
+    ''' Metoda wywołująca reakcję na buttonie, wywołuje logowanie do systemu ERP
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         If Trim(TextBox1.Text).Length = 0 Then

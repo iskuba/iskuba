@@ -1,0 +1,1483 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">	
+   <LINKGROUP ID="Projekt" Title="MiniERP Dokumentacja Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1RowChangeEvent.Action" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000042.html" LinkGroup="Projekt">Action Property</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.AddDataTable1Row" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000025_overloads--.html" LinkGroup="Projekt">AddDataTable1Row Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.AddDataTable1Row" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000026_overloads--.html" LinkGroup="Projekt">AddDataTable1Row Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.CachedstanMagazynu.CacheTimeOut" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000091.html" LinkGroup="Projekt">CacheTimeOut Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.CachedstanMagazynu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000008D.html" LinkGroup="Projekt">CachedstanMagazynu Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.CachedstanMagazynu.New" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000008E.html" LinkGroup="Projekt">CachedstanMagazynu Constructor {Projekt.CachedstanMagazynu}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.Clone" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000027.html" LinkGroup="Projekt">Clone Method {Projekt.DataSet1.DataTable1DataTable}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.Clone" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000011.html" LinkGroup="Projekt">Clone Method {Projekt.DataSet1}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.Connection" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000000.html" LinkGroup="Projekt">Connection Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.Count" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000001F.html" LinkGroup="Projekt">Count Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.CreateInstance" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000028.html" LinkGroup="Projekt">CreateInstance Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.CachedstanMagazynu.CreateReport" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000092.html" LinkGroup="Projekt">CreateReport Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.login.CurrentUser" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000059.html" LinkGroup="Projekt">CurrentUser Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.New" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000000A_overloads--.html" LinkGroup="Projekt">New </LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.New" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000000B_overloads--.html" LinkGroup="Projekt">New </LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000009.html" LinkGroup="Projekt">DataSet1 Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000000C.html" LinkGroup="Projekt">DataTable1 Property</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.New" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000019_overloads--.html" LinkGroup="Projekt">New </LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.New" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000001A_overloads--.html" LinkGroup="Projekt">New </LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000018.html" LinkGroup="Projekt">DataTable1DataTable Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000032.html" LinkGroup="Projekt">DataTable1Row Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1RowChangeEvent" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000003F.html" LinkGroup="Projekt">DataTable1RowChangeEvent Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1RowChangeEvent.New" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000040.html" LinkGroup="Projekt">DataTable1RowChangeEvent Constructor {Projekt.DataSet1.DataTable1RowChangeEvent}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1RowChangeEventHandler" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000017.html" LinkGroup="Projekt">DataTable1RowChangeEventHandler Delegate</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.DataTable1RowChanged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000022.html" LinkGroup="Projekt">DataTable1RowChanged Event</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.DataTable1RowChanging" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000021.html" LinkGroup="Projekt">DataTable1RowChanging Event</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.DataTable1RowDeleted" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000024.html" LinkGroup="Projekt">DataTable1RowDeleted Event</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.DataTable1RowDeleting" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000023.html" LinkGroup="Projekt">DataTable1RowDeleting Event</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.ListaKontrahentow.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000068.html" LinkGroup="Projekt">Dispose Method {Projekt.ListaKontrahentow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujdostawe.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000046.html" LinkGroup="Projekt">Dispose Method {Projekt.dodajedytujdostawe}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujkon.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000004A.html" LinkGroup="Projekt">Dispose Method {Projekt.dodajedytujkon}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujlogin.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000004E.html" LinkGroup="Projekt">Dispose Method {Projekt.dodajedytujlogin}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujprc.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000052.html" LinkGroup="Projekt">Dispose Method {Projekt.dodajedytujprc}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujtowar.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000056.html" LinkGroup="Projekt">Dispose Method {Projekt.dodajedytujtowar}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.info.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000005C.html" LinkGroup="Projekt">Dispose Method {Projekt.info}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listadostaw.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000062.html" LinkGroup="Projekt">Dispose Method {Projekt.listadostaw}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listaloginow.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000006E.html" LinkGroup="Projekt">Dispose Method {Projekt.listaloginow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listapracownikow.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000074.html" LinkGroup="Projekt">Dispose Method {Projekt.listapracownikow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listatowarow.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000007A.html" LinkGroup="Projekt">Dispose Method {Projekt.listatowarow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.login.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000005A.html" LinkGroup="Projekt">Dispose Method {Projekt.login}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.menuERP.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000007E.html" LinkGroup="Projekt">Dispose Method {Projekt.menuERP}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.raport.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000082.html" LinkGroup="Projekt">Dispose Method {Projekt.raport}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.stanMagazynu.FullResourceName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000087.html" LinkGroup="Projekt">FullResourceName Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.CachedstanMagazynu.GetCustomizedCacheKey" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000093.html" LinkGroup="Projekt">GetCustomizedCacheKey Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.GetRowType" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000002B.html" LinkGroup="Projekt">GetRowType Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.GetSchemaSerializable" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000015.html" LinkGroup="Projekt">GetSchemaSerializable Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.GetTypedDataSetSchema" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000016.html" LinkGroup="Projekt">GetTypedDataSetSchema Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.GetTypedTableSchema" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000031.html" LinkGroup="Projekt">GetTypedTableSchema Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.InitializeDerivedDataSet" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000010.html" LinkGroup="Projekt">InitializeDerivedDataSet Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.CachedstanMagazynu.IsCacheable" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000008F.html" LinkGroup="Projekt">IsCacheable Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.IsiloscNull" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000003D.html" LinkGroup="Projekt">IsiloscNull Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.IsjmzNull" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000003B.html" LinkGroup="Projekt">IsjmzNull Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.IskodNull" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000037.html" LinkGroup="Projekt">IskodNull Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.IsnazwaNull" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000039.html" LinkGroup="Projekt">IsnazwaNull Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.Item" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000020.html" LinkGroup="Projekt">Item Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.ListaKontrahentow" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000063.html" LinkGroup="Projekt">ListaKontrahentow Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.ListaKontrahentow.ListaKontrahentow_Load" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000066.html" LinkGroup="Projekt">ListaKontrahentow_Load Method {Projekt.ListaKontrahentow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listadostaw.ListaKontrahentow_Load" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000060.html" LinkGroup="Projekt">ListaKontrahentow_Load Method {Projekt.listadostaw}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listaloginow.ListaKontrahentow_Load" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000006C.html" LinkGroup="Projekt">ListaKontrahentow_Load Method {Projekt.listaloginow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listapracownikow.ListaKontrahentow_Load" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000072.html" LinkGroup="Projekt">ListaKontrahentow_Load Method {Projekt.listapracownikow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listatowarow.ListaKontrahentow_Load" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000078.html" LinkGroup="Projekt">ListaKontrahentow_Load Method {Projekt.listatowarow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.NewDataTable1Row" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000029.html" LinkGroup="Projekt">NewDataTable1Row Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.stanMagazynu.NewGenerator" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000086.html" LinkGroup="Projekt">NewGenerator Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.NewRowFromBuilder" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000002A.html" LinkGroup="Projekt">NewRowFromBuilder Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.OnRowChanged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000002C.html" LinkGroup="Projekt">OnRowChanged Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.OnRowChanging" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000002D.html" LinkGroup="Projekt">OnRowChanging Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.OnRowDeleted" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000002E.html" LinkGroup="Projekt">OnRowDeleted Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.OnRowDeleting" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000002F.html" LinkGroup="Projekt">OnRowDeleting Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000095.html" LinkGroup="Projekt">Projekt Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000094.html" LinkGroup="Projekt">Projekt Reference</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.ReadXmlSerializable" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000014.html" LinkGroup="Projekt">ReadXmlSerializable Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.Relations" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000000F.html" LinkGroup="Projekt">Relations Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.RemoveDataTable1Row" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000030.html" LinkGroup="Projekt">RemoveDataTable1Row Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.stanMagazynu.ResourceName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000085.html" LinkGroup="Projekt">ResourceName Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1RowChangeEvent.Row" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000041.html" LinkGroup="Projekt">Row Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.SchemaSerializationMode" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000000D.html" LinkGroup="Projekt">SchemaSerializationMode Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.stanMagazynu.Section1" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000088.html" LinkGroup="Projekt">Section1 Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.stanMagazynu.Section2" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000089.html" LinkGroup="Projekt">Section2 Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.stanMagazynu.Section3" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000008A.html" LinkGroup="Projekt">Section3 Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.stanMagazynu.Section4" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000008B.html" LinkGroup="Projekt">Section4 Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.stanMagazynu.Section5" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000008C.html" LinkGroup="Projekt">Section5 Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.Connection.SetConnectionString" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000001.html" LinkGroup="Projekt">SetConnectionString Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.SetiloscNull" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000003E.html" LinkGroup="Projekt">SetiloscNull Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.SetjmzNull" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000003C.html" LinkGroup="Projekt">SetjmzNull Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.SetkodNull" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000038.html" LinkGroup="Projekt">SetkodNull Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.SetnazwaNull" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000003A.html" LinkGroup="Projekt">SetnazwaNull Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.CachedstanMagazynu.ShareDBLogonInfo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000090.html" LinkGroup="Projekt">ShareDBLogonInfo Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.ShouldSerializeRelations" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000013.html" LinkGroup="Projekt">ShouldSerializeRelations Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.ShouldSerializeTables" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000012.html" LinkGroup="Projekt">ShouldSerializeTables Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.Tables" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000000E.html" LinkGroup="Projekt">Tables Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.currentUser" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000004.html" LinkGroup="Projekt">currentUser Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujdostawe" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000043.html" LinkGroup="Projekt">dodajedytujdostawe Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujkon" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000047.html" LinkGroup="Projekt">dodajedytujkon Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujlogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000004B.html" LinkGroup="Projekt">dodajedytujlogin Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujprc" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000004F.html" LinkGroup="Projekt">dodajedytujprc Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujtowar" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000053.html" LinkGroup="Projekt">dodajedytujtowar Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.Connection.executeQuery" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000003.html" LinkGroup="Projekt">executeQuery Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.ilosc" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000036.html" LinkGroup="Projekt">ilosc Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.iloscColumn" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000001E.html" LinkGroup="Projekt">iloscColumn Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.info" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000005B.html" LinkGroup="Projekt">info Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.jmz" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000035.html" LinkGroup="Projekt">jmz Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.jmzColumn" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000001D.html" LinkGroup="Projekt">jmzColumn Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.kod" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000033.html" LinkGroup="Projekt">kod Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.kodColumn" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000001B.html" LinkGroup="Projekt">kodColumn Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listadostaw" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000005D.html" LinkGroup="Projekt">listadostaw Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listaloginow" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000069.html" LinkGroup="Projekt">listaloginow Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listapracownikow" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000006F.html" LinkGroup="Projekt">listapracownikow Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listatowarow" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000075.html" LinkGroup="Projekt">listatowarow Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.login" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000057.html" LinkGroup="Projekt">login Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.menuERP" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000007B.html" LinkGroup="Projekt">menuERP Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1Row.nazwa" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000034.html" LinkGroup="Projekt">nazwa Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.DataSet1.DataTable1DataTable.nazwaColumn" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000001C.html" LinkGroup="Projekt">nazwaColumn Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.raport" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000081.html" LinkGroup="Projekt">raport Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.currentUser.returnIdUser" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000007.html" LinkGroup="Projekt">returnIdUser Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.currentUser.returnIsAdmin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000008.html" LinkGroup="Projekt">returnIsAdmin Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.menuERP.returnLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000007D.html" LinkGroup="Projekt">returnLogin Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.ListaKontrahentow.returnOknoMenu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000065.html" LinkGroup="Projekt">returnOknoMenu Method {Projekt.ListaKontrahentow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listadostaw.returnOknoMenu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000005F.html" LinkGroup="Projekt">returnOknoMenu Method {Projekt.listadostaw}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listaloginow.returnOknoMenu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000006B.html" LinkGroup="Projekt">returnOknoMenu Method {Projekt.listaloginow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listapracownikow.returnOknoMenu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000071.html" LinkGroup="Projekt">returnOknoMenu Method {Projekt.listapracownikow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listatowarow.returnOknoMenu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000077.html" LinkGroup="Projekt">returnOknoMenu Method {Projekt.listatowarow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.login.returnQuery" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000058.html" LinkGroup="Projekt">returnQuery Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.currentUser.setIDusr" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000005.html" LinkGroup="Projekt">setIDusr Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujdostawe.setId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000044.html" LinkGroup="Projekt">setId Method {Projekt.dodajedytujdostawe}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujkon.setId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000048.html" LinkGroup="Projekt">setId Method {Projekt.dodajedytujkon}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujlogin.setId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000004C.html" LinkGroup="Projekt">setId Method {Projekt.dodajedytujlogin}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujprc.setId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000050.html" LinkGroup="Projekt">setId Method {Projekt.dodajedytujprc}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujtowar.setId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000054.html" LinkGroup="Projekt">setId Method {Projekt.dodajedytujtowar}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.currentUser.setIsAdmin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000006.html" LinkGroup="Projekt">setIsAdmin Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.menuERP.setLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000007C.html" LinkGroup="Projekt">setLogin Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.ListaKontrahentow.setOknoMenu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000064.html" LinkGroup="Projekt">setOknoMenu Method {Projekt.ListaKontrahentow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listadostaw.setOknoMenu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000005E.html" LinkGroup="Projekt">setOknoMenu Method {Projekt.listadostaw}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listaloginow.setOknoMenu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000006A.html" LinkGroup="Projekt">setOknoMenu Method {Projekt.listaloginow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listapracownikow.setOknoMenu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000070.html" LinkGroup="Projekt">setOknoMenu Method {Projekt.listapracownikow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listatowarow.setOknoMenu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000076.html" LinkGroup="Projekt">setOknoMenu Method {Projekt.listatowarow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujdostawe.setOknoTowar" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000045.html" LinkGroup="Projekt">setOknoTowar Method {Projekt.dodajedytujdostawe}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujkon.setOknoTowar" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000049.html" LinkGroup="Projekt">setOknoTowar Method {Projekt.dodajedytujkon}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujlogin.setOknoTowar" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000004D.html" LinkGroup="Projekt">setOknoTowar Method {Projekt.dodajedytujlogin}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujprc.setOknoTowar" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000051.html" LinkGroup="Projekt">setOknoTowar Method {Projekt.dodajedytujprc}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.dodajedytujtowar.setOknoTowar" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000055.html" LinkGroup="Projekt">setOknoTowar Method {Projekt.dodajedytujtowar}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.ListaKontrahentow.sortuj" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000067.html" LinkGroup="Projekt">sortuj Method {Projekt.ListaKontrahentow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listadostaw.sortuj" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000061.html" LinkGroup="Projekt">sortuj Method {Projekt.listadostaw}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listaloginow.sortuj" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_000000000000006D.html" LinkGroup="Projekt">sortuj Method {Projekt.listaloginow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listapracownikow.sortuj" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000073.html" LinkGroup="Projekt">sortuj Method {Projekt.listapracownikow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.listatowarow.sortuj" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000079.html" LinkGroup="Projekt">sortuj Method {Projekt.listatowarow}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.stanMagazynu" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000083.html" LinkGroup="Projekt">stanMagazynu Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.stanMagazynu.New" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000084.html" LinkGroup="Projekt">stanMagazynu Constructor {Projekt.stanMagazynu}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Projekt.Connection.wykonajZapytanie" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Projekt.chm::/topic_0000000000000002.html" LinkGroup="Projekt">wykonajZapytanie Method</LItem>
+      </Links>
+   </Context>
+   
+
+</DynamicHelp>
+

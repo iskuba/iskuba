@@ -1,21 +1,36 @@
-﻿Public Class dodajedytujprc
+﻿''' <summary>
+''' Klasa dodająca,edytująca pracownika
+''' </summary>
 
 
+Public Class dodajedytujprc
+
+    ''' <summary>
+    ''' Zmiena przechowująca referencję do listyPrc
+    ''' </summary>
     Private oknoPrc As listapracownikow
+
+    ''' <summary>
+    ''' zmienna przechowująca id wybranego rekordu, jeżeli id > 0 oznacza to iż rekord jest edytowany 
+    ''' </summary>
     Private id As Long
 
-
+    ''' <summary>
+    ''' metoda ustawiająca id rekordu
+    ''' </summary>
     Public Sub setId(ByVal state As Long)
         id = state
     End Sub
-
+    ''' <summary>
+    ''' metoda utawiająca zmieną oknoPrc
+    ''' </summary>
     Public Sub setOknoTowar(ByRef state As listapracownikow)
         oknoPrc = state
     End Sub
 
-    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
-
-    End Sub
+    ''' <summary>
+    ''' Metoda  wywoływująca edycję lub dodanie nowego rekordu , zależy czy id jest większe  czy równe 0 
+    ''' </summary>
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If Trim(TextBox1.Text).Length = 0 Then
@@ -47,7 +62,9 @@
 
 
     End Sub
-
+    ''' <summary>
+    ''' Metoda sprawdzająca czy wprowadzona wartosc jest numeryczna
+    ''' </summary>
     Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
         If TextBox3.Text.Length > 0 Then
             If IsNumeric(TextBox3.Text) Then
@@ -56,7 +73,9 @@
             End If
         End If
     End Sub
-
+    ''' <summary>
+    ''' Metoda sprawdzająca czy wprowadzona wartosc jest numeryczna
+    ''' </summary>
     Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
         If TextBox4.Text.Length > 0 Then
             If IsNumeric(TextBox4.Text) Then
@@ -65,7 +84,9 @@
             End If
         End If
     End Sub
-
+    ''' <summary>
+    ''' Metoda ładująca formę naszej klasy
+    ''' </summary>
     Private Sub dodajedytujkon_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If id = 0 Then
             Me.Text = " Dodaj Pracownika "

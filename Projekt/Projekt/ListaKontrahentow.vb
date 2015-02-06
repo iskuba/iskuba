@@ -1,17 +1,30 @@
-﻿Public Class ListaKontrahentow
+﻿''' <summary>
+''' Klasa przedstawiająca listę aktualnych kontrahentow
+''' </summary>
 
 
+Public Class ListaKontrahentow
+
+    ''' <summary>
+    ''' Zmienna przechowująca referencję do menuERP
+    ''' </summary>
     Private oknoMenu As menuERP
-
+    ''' <summary>
+    ''' Metoda ustawiająca zmieną oknoMenu
+    ''' </summary>
     Public Sub setOknoMenu(ByRef state As menuERP)
         oknoMenu = state
     End Sub
-
+    ''' <summary>
+    ''' Metoda zwracająca zmieną oknoMenu
+    ''' </summary>
     Function returnOknoMenu() As menuERP
         Return oknoMenu
     End Function
 
-
+    ''' <summary>
+    ''' Wywołanie metody ładującej formę klasy
+    ''' </summary>
     Public Sub ListaKontrahentow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
 
@@ -59,7 +72,9 @@ ControlStyles.DoubleBuffer, True)
         End Try
     End Sub
 
-
+    ''' <summary>
+    ''' Metoda sortująca datagrida
+    ''' </summary>
     Sub sortuj()
         Dim table2 As DataTable
         table2 = DataGridView1.DataSource
@@ -82,14 +97,22 @@ ControlStyles.DoubleBuffer, True)
 
 
     End Sub
+
+    ''' <summary>
+    ''' sortowanie on TextBox1TextChange
+    ''' </summary>
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
         sortuj()
     End Sub
-
+    ''' <summary>
+    ''' sortowanie on TextBox2TextChange
+    ''' </summary>
     Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
         sortuj()
     End Sub
-
+    ''' <summary>
+    ''' Metoda tworzy obiekt dodajedytujkon oraz wywołuje formę tej klasy
+    ''' </summary>
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim forma As New dodajedytujkon
         forma.setOknoTowar(Me)
@@ -97,7 +120,9 @@ ControlStyles.DoubleBuffer, True)
 
 
     End Sub
-
+    ''' <summary>
+    ''' Metoda edytuje wybrany z datagrida rekord oraz tworzy obiekt klasy dodajeydutjkon i wywołuje formę tej klasy z id rekordu
+    ''' </summary>
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
         If IsNothing(DataGridView1.CurrentRow) Then
@@ -122,7 +147,9 @@ ControlStyles.DoubleBuffer, True)
         End If
 
     End Sub
-
+    ''' <summary>
+    ''' Metoda usuwająca aktualnie wybrany element z datagirida
+    ''' </summary>
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Try
 

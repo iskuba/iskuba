@@ -1,13 +1,26 @@
 ﻿Imports System.Data.OleDb
 Imports System.Data.SqlClient
 
-
+''' <summary>
+''' Klasa dzięku której łączymy się z bazą sql
+''' </summary>
 Public Class Connection
 
-
+    ''' <summary>
+    ''' Zmiena przechowująca adres do połączenia z bazą
+    ''' </summary>
     Private connectionString As String
+    ''' <summary>
+    ''' Zmienna przechowująca błąd w postaci numeru błędu który powstał podczas połączenia,edycji w bazie
+    ''' </summary>
     Private errorState As String
+    ''' <summary>
+    ''' Zmienna przechowująca błąd w postaci tekstu błędu który powstał podczas połączenia,edycji w bazie
+    ''' </summary>
     Private errorMessage As String
+    ''' <summary>
+    ''' Zmienna przechowująca referencję do klasy info, która wyswietla błędy
+    ''' </summary>
     Private info As New info
 
 
@@ -15,11 +28,15 @@ Public Class Connection
 
 
 
-
+    ''' <summary>
+    ''' Metoda ładująca wartosc do connectionString
+    ''' </summary>
     Public Sub SetConnectionString(ByVal connection As String)
         connectionString = connection
     End Sub
-
+    ''' <summary>
+    ''' Metoda wykonująca zapytania typu SELECT
+    ''' </summary>
     Function wykonajZapytanie(ByVal query As String)
         Try
             Dim da1 As New System.Data.OleDb.OleDbDataAdapter
@@ -37,7 +54,9 @@ Public Class Connection
         End Try
     End Function
 
-
+    ''' <summary>
+    ''' Metoda wykonująca zapytania typu DELETE,UPDATE,INSERT 
+    ''' </summary>
     Function executeQuery(ByVal query As String)
         Try
             Dim MyConnection As New OleDbConnection(connectionString)

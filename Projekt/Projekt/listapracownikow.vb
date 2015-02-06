@@ -1,18 +1,31 @@
-﻿Public Class listapracownikow
+﻿''' <summary>
+''' Klasa przedstawiająca listę aktualnych pracownikow
+''' </summary>
 
 
+Public Class listapracownikow
+
+    ''' <summary>
+    ''' Zmienna przechowująca referencję do menuERP
+    ''' </summary>
     Private oknoMenu As menuERP
-
+    ''' <summary>
+    ''' Metoda ustawiająca zmieną oknoMenu
+    ''' </summary>
     Public Sub setOknoMenu(ByRef state As menuERP)
         oknoMenu = state
     End Sub
-
+    ''' <summary>
+    ''' Metoda zwracająca zmieną oknoMenu
+    ''' </summary>
     Function returnOknoMenu() As menuERP
         Return oknoMenu
     End Function
 
 
-
+    ''' <summary>
+    ''' Wywołanie metody ładującej formę klasy
+    ''' </summary>
     Public Sub ListaKontrahentow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
 
@@ -61,36 +74,35 @@ ControlStyles.DoubleBuffer, True)
     End Sub
 
 
+    ''' <summary>
+    ''' Metoda sortująca datagrida
+    ''' </summary>
     Sub sortuj()
         Dim table2 As DataTable
         table2 = DataGridView1.DataSource
-
-
-
 
         '' MsgBox("Kod_Towaru " & kod & " and Numer_Zlecenia " & zw & "")
         ''    MsgBox("Twr_Kod like '" & TextBox1.Text & "%' and NumerZlecenia like '" & TextBox2.Text & "%'and Dostawa like '" & TextBox3.Text & "%' and NumerPrzewodnika like '" & TextBox4.Text & "%' and  " & rw & "")
 
         table2.DefaultView.RowFilter = "imie like '" & TextBox1.Text & "%' and nazwisko like '" & TextBox2.Text & "%' and miejscowosc like '" & TextBox3.Text & "%' "
 
-
-
-
-
-
-
-
-
-
     End Sub
+
+    ''' <summary>
+    ''' sortowanie on TextBox1TextChange
+    ''' </summary>
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
         sortuj()
     End Sub
-
+    ''' <summary>
+    ''' sortowanie on TextBox2TextChange
+    ''' </summary>
     Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
         sortuj()
     End Sub
-
+    ''' <summary>
+    ''' Metoda tworzy obiekt dodajedytujprc oraz wywołuje formę tej klasy
+    ''' </summary>
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim forama As New dodajedytujprc
         forama.setOknoTowar(Me)
@@ -98,6 +110,10 @@ ControlStyles.DoubleBuffer, True)
 
     End Sub
 
+
+    ''' <summary>
+    ''' Metoda edytuje wybrany z datagrida rekord oraz tworzy obiekt klasy dodajeydutjdostawe i wywołuje formę tej klasy z id rekordu
+    ''' </summary>
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
 
@@ -127,7 +143,9 @@ ControlStyles.DoubleBuffer, True)
         End If
 
     End Sub
-
+    ''' <summary>
+    ''' Metoda usuwająca aktualnie wybrany element z datagirida
+    ''' </summary>
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Try
 
@@ -172,7 +190,9 @@ ControlStyles.DoubleBuffer, True)
 
         End Try
     End Sub
-
+    ''' <summary>
+    ''' sorotwanie on Textbox3textchange
+    ''' </summary>
     Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
         sortuj()
 

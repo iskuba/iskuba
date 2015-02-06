@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Index</title>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<style>
+		html,body {
+			margin: 0; padding: 0px;
+			height:100%; 
+			min-height:100%;
+			background-color: rgb(233,232,220);
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			color: black;
+		}
+
+		body {font-size:75%;position:relative; margin-top:-1px; border-style: solid solid solid solid;	border-color: rgb(172,168,153);	border-width: 0px 0px 1px 0px;}
+		a { text-decoration:none; color:#06c }
+		form {padding:5px; margin:0px;}
+	</style>
+</head>
+<body style="direction: ltr;">
+	<form>
+	Look for:<br /><input style="width:100%" onKeyDown="check_input(this.value,get_match)" onKeyUp="check_input(this.value,get_match)"/>
+	</form>
+
+	<script>
+		var words = new Array(
+"Action Property","AddDataTable1Row (DataTable1Row) Method","AddDataTable1Row (String, String, String, String) Method","CacheTimeOut Property","CachedstanMagazynu Class","CachedstanMagazynu Constructor {Projekt.CachedstanMagazynu}","Clone Method {Projekt.DataSet1.DataTable1DataTable}","Clone Method {Projekt.DataSet1}","Connection Class","Count Property","CreateInstance Method","CreateReport Method","CurrentUser Method","DataSet1  Constructor {Projekt.DataSet1}","DataSet1 (SerializationInfo, StreamingContext) Constructor","DataSet1 Class","DataTable1 Property","DataTable1DataTable  Constructor {Projekt.DataSet1.DataTable1DataTable}","DataTable1DataTable (SerializationInfo, StreamingContext) Constructor {Projekt.DataSet1.DataTable1DataTable}","DataTable1DataTable Class","DataTable1Row Class","DataTable1RowChangeEvent Class","DataTable1RowChangeEvent Constructor {Projekt.DataSet1.DataTable1RowChangeEvent}","DataTable1RowChangeEventHandler Delegate","DataTable1RowChanged Event","DataTable1RowChanging Event","DataTable1RowDeleted Event","DataTable1RowDeleting Event","Dispose Method {Projekt.ListaKontrahentow}","Dispose Method {Projekt.dodajedytujdostawe}","Dispose Method {Projekt.dodajedytujkon}","Dispose Method {Projekt.dodajedytujlogin}","Dispose Method {Projekt.dodajedytujprc}","Dispose Method {Projekt.dodajedytujtowar}","Dispose Method {Projekt.info}","Dispose Method {Projekt.listadostaw}","Dispose Method {Projekt.listaloginow}","Dispose Method {Projekt.listapracownikow}","Dispose Method {Projekt.listatowarow}","Dispose Method {Projekt.login}","Dispose Method {Projekt.menuERP}","Dispose Method {Projekt.raport}","FullResourceName Property","GetCustomizedCacheKey Method","GetRowType Method","GetSchemaSerializable Method","GetTypedDataSetSchema Method","GetTypedTableSchema Method","InitializeDerivedDataSet Method","IsCacheable Property","IsiloscNull Method","IsjmzNull Method","IskodNull Method","IsnazwaNull Method","Item Property","ListaKontrahentow Class","ListaKontrahentow_Load Method {Projekt.ListaKontrahentow}","ListaKontrahentow_Load Method {Projekt.listadostaw}","ListaKontrahentow_Load Method {Projekt.listaloginow}","ListaKontrahentow_Load Method {Projekt.listapracownikow}","ListaKontrahentow_Load Method {Projekt.listatowarow}","NewDataTable1Row Method","NewGenerator Property","NewRowFromBuilder Method","OnRowChanged Method","OnRowChanging Method","OnRowDeleted Method","OnRowDeleting Method","Projekt Namespace","Projekt Reference","ReadXmlSerializable Method","Relations Property","RemoveDataTable1Row Method","ResourceName Property","Row Property","SchemaSerializationMode Property","Section1 Property","Section2 Property","Section3 Property","Section4 Property","Section5 Property","SetConnectionString Method","SetiloscNull Method","SetjmzNull Method","SetkodNull Method","SetnazwaNull Method","ShareDBLogonInfo Property","ShouldSerializeRelations Method","ShouldSerializeTables Method","Tables Property","currentUser Class","dodajedytujdostawe Class","dodajedytujkon Class","dodajedytujlogin Class","dodajedytujprc Class","dodajedytujtowar Class","executeQuery Method","ilosc Property","iloscColumn Property","info Class","jmz Property","jmzColumn Property","kod Property","kodColumn Property","listadostaw Class","listaloginow Class","listapracownikow Class","listatowarow Class","login Class","menuERP Class","nazwa Property","nazwaColumn Property","raport Class","returnIdUser Method","returnIsAdmin Method","returnLogin Method","returnOknoMenu Method {Projekt.ListaKontrahentow}","returnOknoMenu Method {Projekt.listadostaw}","returnOknoMenu Method {Projekt.listaloginow}","returnOknoMenu Method {Projekt.listapracownikow}","returnOknoMenu Method {Projekt.listatowarow}","returnQuery Method","setIDusr Method","setId Method {Projekt.dodajedytujdostawe}","setId Method {Projekt.dodajedytujkon}","setId Method {Projekt.dodajedytujlogin}","setId Method {Projekt.dodajedytujprc}","setId Method {Projekt.dodajedytujtowar}","setIsAdmin Method","setLogin Method","setOknoMenu Method {Projekt.ListaKontrahentow}","setOknoMenu Method {Projekt.listadostaw}","setOknoMenu Method {Projekt.listaloginow}","setOknoMenu Method {Projekt.listapracownikow}","setOknoMenu Method {Projekt.listatowarow}","setOknoTowar Method {Projekt.dodajedytujdostawe}","setOknoTowar Method {Projekt.dodajedytujkon}","setOknoTowar Method {Projekt.dodajedytujlogin}","setOknoTowar Method {Projekt.dodajedytujprc}","setOknoTowar Method {Projekt.dodajedytujtowar}","sortuj Method {Projekt.ListaKontrahentow}","sortuj Method {Projekt.listadostaw}","sortuj Method {Projekt.listaloginow}","sortuj Method {Projekt.listapracownikow}","sortuj Method {Projekt.listatowarow}","stanMagazynu Class","stanMagazynu Constructor {Projekt.stanMagazynu}","wykonajZapytanie Method"
+		);
+		
+		
+		var oldHighlight = 0;
+		var oldKey = "";
+		
+		function get_match(text) {
+		    var ltext = text.toLowerCase();
+		    for(i in words) {
+		        if(words[i].toLowerCase().indexOf(ltext) == "0") {
+		            return words[i];
+		        }
+		    }
+		    return "";
+		}
+		
+		function highlight(keyword) {
+		    if(oldHighlight) oldHighlight.className = "";
+		    var el = parent.frames['zindex'].document.getElementById("w_"+keyword);
+		    el.className="highlighted";
+		    oldHighlight = el;
+		}
+		
+		function check_input(text, matchfun) {
+		    if(text!=oldKey) {
+		        var keyword = matchfun(text);
+		        if(keyword) {       
+		            highlight(keyword);
+		            parent.frames['zindex'].document.getElementById('w_'+keyword).scrollIntoView();
+		        }
+		        oldKey = text;
+		    }
+		}
+	</script>
+</body>
+</html>
+

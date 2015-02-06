@@ -1,29 +1,43 @@
-﻿Public Class dodajedytujdostawe
+﻿''' <summary>
+''' Klasa dodająca,edytująca dostawę
+''' </summary>
 
+Public Class dodajedytujdostawe
 
+    ''' <summary>
+    ''' Zmiena przechowująca referencję do listyDostaw
+    ''' </summary>
     Private oknoDostaw As listadostaw
+
+    ''' <summary>
+    ''' zmienna przechowująca id wybranego rekordu, jeżeli id > 0 oznacza to iż rekord jest edytowany 
+    ''' </summary>
     Private id As Long
 
-
+    ''' <summary>
+    ''' metoda ustawiająca id rekordu
+    ''' </summary>
     Public Sub setId(ByVal state As Long)
         id = state
     End Sub
-
+    ''' <summary>
+    ''' metoda utawiająca zmieną oknoDostaw
+    ''' </summary>
     Public Sub setOknoTowar(ByRef state As listadostaw)
         oknoDostaw = state
     End Sub
 
-    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs)
 
-    End Sub
-
+    ''' <summary>
+    ''' Metoda  wywoływująca edycję lub dodanie nowego rekordu , zależy czy id jest większe  czy równe 0 
+    ''' </summary>
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If Trim(TextBox1.Text).Length = 0 Then
             MsgBox("Podaj ilosc !")
             Exit Sub
         End If
 
-      
+
 
 
 
@@ -42,7 +56,9 @@
     End Sub
 
 
-
+    ''' <summary>
+    ''' Metoda ładująca formę naszej klasy
+    ''' </summary>
     Private Sub dodajedytujkon_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
