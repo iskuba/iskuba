@@ -53,7 +53,7 @@
   <Class Name="Projekt.dodajedytujdostawe" Collapsed="true">
     <Position X="3.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIBAAAAkCAAAAAAACCAEAgCAAAQwAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>AAIBAAAAkCAAAAAAACCAEAgCAAAQQAAAAAAAAAAAAgA=</HashCode>
       <FileName>dodajedytujdostawe.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -63,7 +63,7 @@
   <Class Name="Projekt.dodajedytujkon" Collapsed="true">
     <Position X="3.25" Y="7.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAEAgkKAAAAAAIGDgAAgCAAAQwAAAAAAAEAAAAgA=</HashCode>
+      <HashCode>AAABAEAgkKAAAAAAIGDgAAgCAAAQQAAAAAAAEAAAAgA=</HashCode>
       <FileName>dodajedytujkon.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -81,7 +81,7 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AQARAAAAkCAAAAAAACCAEAgCAAAQwAAAAEAAAAAAAgA=</HashCode>
+      <HashCode>AQARAAAAkCAAAAAAACCAEAgCAAAQQAAAAEAAAAAAAgA=</HashCode>
       <FileName>dodajedytujlogin.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -91,7 +91,7 @@
   <Class Name="Projekt.dodajedytujprc" Collapsed="true">
     <Position X="3.25" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAABgEAgkKAAAAAAIGDgAAgCAAAQwAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>EAABgEAgkKAAAAAAIGDgAAgCAAAQQAAAAAAAAAAAAgA=</HashCode>
       <FileName>dodajedytujprc.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -101,7 +101,7 @@
   <Class Name="Projekt.dodajedytujtowar" Collapsed="true">
     <Position X="3.25" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>gAABAAAgkCAAAAAAACCAEAgCAAAQwAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>gAABAAAgkCAAAAAAACCAEAgCAAAQQAAAAAAAAAAAAgA=</HashCode>
       <FileName>dodajedytujtowar.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
