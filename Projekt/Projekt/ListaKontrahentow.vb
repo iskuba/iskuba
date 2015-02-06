@@ -1,5 +1,17 @@
 ﻿Public Class ListaKontrahentow
 
+
+    Private oknoMenu As menuERP
+
+    Public Sub setOknoMenu(ByRef state As menuERP)
+        oknoMenu = state
+    End Sub
+
+    Function returnOknoMenu() As menuERP
+        Return oknoMenu
+    End Function
+
+
     Public Sub ListaKontrahentow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
 
@@ -31,7 +43,7 @@ ControlStyles.DoubleBuffer, True)
 
 
             Dim wynik As Object
-            wynik = login.query.wykonajZapytanie("SELECT * FROM kntkarty")
+            wynik = oknoMenu.returnLogin.returnQuery.wykonajZapytanie("SELECT * FROM kntkarty")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
                 DataGridView1.Columns("id").Visible = False
@@ -79,8 +91,10 @@ ControlStyles.DoubleBuffer, True)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        dodajedytujkon.Close()
-        dodajedytujkon.Show()
+        Dim forma As New dodajedytujkon
+        forma.setOknoTowar(Me)
+        forma.Show()
+
 
     End Sub
 
@@ -90,19 +104,20 @@ ControlStyles.DoubleBuffer, True)
 
         Else
             On Error Resume Next
-            dodajedytujkon.Close()
-            dodajedytujkon.id = DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value
-            dodajedytujkon.TextBox1.Text = DataGridView1.Item("nazwa", DataGridView1.CurrentRow.Index).Value
-            dodajedytujkon.TextBox2.Text = DataGridView1.Item("miejscowosc", DataGridView1.CurrentRow.Index).Value
+            Dim forma As New dodajedytujkon
+            forma.setOknoTowar(Me)
+            forma.setId(DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value)
+            forma.TextBox1.Text = DataGridView1.Item("nazwa", DataGridView1.CurrentRow.Index).Value
+            forma.TextBox2.Text = DataGridView1.Item("miejscowosc", DataGridView1.CurrentRow.Index).Value
             Dim kod As String
 
             kod = DataGridView1.Item("kodpocztowy", DataGridView1.CurrentRow.Index).Value
-            dodajedytujkon.TextBox3.Text = kod(0)
-            dodajedytujkon.TextBox4.Text = kod(1)
-            dodajedytujkon.TextBox5.Text = DataGridView1.Item("telefon", DataGridView1.CurrentRow.Index).Value
-            dodajedytujkon.TextBox6.Text = DataGridView1.Item("nrlokalu", DataGridView1.CurrentRow.Index).Value
-            dodajedytujkon.TextBox7.Text = DataGridView1.Item("ulica", DataGridView1.CurrentRow.Index).Value
-            dodajedytujkon.Show()
+            forma.TextBox3.Text = kod(0)
+            forma.TextBox4.Text = kod(1)
+            forma.TextBox5.Text = DataGridView1.Item("telefon", DataGridView1.CurrentRow.Index).Value
+            forma.TextBox6.Text = DataGridView1.Item("nrlokalu", DataGridView1.CurrentRow.Index).Value
+            forma.TextBox7.Text = DataGridView1.Item("ulica", DataGridView1.CurrentRow.Index).Value
+            forma.Show()
 
         End If
 
@@ -128,7 +143,7 @@ ControlStyles.DoubleBuffer, True)
 
 
                 Dim wynik As Object
-                wynik = login.query.wykonajZapytanie("SELECT * FROM  tranag where idkontrahenta=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                wynik = oknoMenu.returnLogin.returnQuery.wykonajZapytanie("SELECT * FROM  tranag where idkontrahenta=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
 
                 If wynik.GetType.FullName = GetType(DataTable).FullName Then
                     Dim tabela As DataTable
@@ -140,7 +155,7 @@ ControlStyles.DoubleBuffer, True)
                         MsgBox("Istnieją tranzakcje na tego kontrahenta. Usuwanie rekordu zostanie anulowane !")
                     Else
 
-                        login.query.executeQuery("DELETE FROM KNTKARTY where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                        oknoMenu.returnLogin.returnQuery.executeQuery("DELETE FROM KNTKARTY where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
                         Me.ListaKontrahentow_Load(sender, e)
                     End If
 
@@ -149,7 +164,7 @@ ControlStyles.DoubleBuffer, True)
 
             End If
         Catch ex As Exception
-            dodajedytujkon.Show()
+
         End Try
     End Sub
 End Class

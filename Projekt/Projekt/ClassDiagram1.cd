@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Projekt.Connection">
+    <Position X="4.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAgAQIAAQAAAAAAAAAAAQAAEAAAAAAA=</HashCode>
+      <FileName>Connection.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="info" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.currentUser">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAAAAAAAAAAgABAAAAAAAoAA=</HashCode>
+      <FileName>currentUser.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt.login">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEKAAAAAAAAKAAAgCAAAQQAAAAEQIAAAAAQA=</HashCode>
+      <FileName>Form1.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="query" />
+      <Field Name="user" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.menuERP" Collapsed="true">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACACEgAAAAAACAQDgCAAQAcAgAAECAAAAAEAA=</HashCode>
+      <FileName>menuERP.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="login" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.dodajedytujdostawe" Collapsed="true">
+    <Position X="3.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAAAAkCAAAAAAACCAEAgCAAAQwAAAAAAAAAAAAgA=</HashCode>
+      <FileName>dodajedytujdostawe.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oknoDostaw" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.dodajedytujkon" Collapsed="true">
+    <Position X="3.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAEAgkKAAAAAAIGDgAAgCAAAQwAAAAAAAEAAAAgA=</HashCode>
+      <FileName>dodajedytujkon.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oknoKon" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.dodajedytujlogin" Collapsed="true">
+    <Position X="3.25" Y="8.75" Width="1.5" />
+    <AssociationLine Name="oknoLog" Type="Projekt.listaloginow" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="9.441" />
+        <Point X="2.875" Y="9.441" />
+        <Point X="2.875" Y="4.05" />
+        <Point X="2" Y="4.05" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQARAAAAkCAAAAAAACCAEAgCAAAQwAAAAEAAAAAAAgA=</HashCode>
+      <FileName>dodajedytujlogin.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oknoLog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.dodajedytujprc" Collapsed="true">
+    <Position X="3.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABgEAgkKAAAAAAIGDgAAgCAAAQwAAAAAAAAAAAAgA=</HashCode>
+      <FileName>dodajedytujprc.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oknoPrc" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.dodajedytujtowar" Collapsed="true">
+    <Position X="3.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAAAgkCAAAAAAACCAEAgCAAAQwAAAAAAAAAAAAgA=</HashCode>
+      <FileName>dodajedytujtowar.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oknoTowar" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.info">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>info.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projekt.listadostaw" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgECAAAAACAEDAADgCgAAQcAAIQAAQACAAACA=</HashCode>
+      <FileName>listadostaw.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oknoMenu" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.ListaKontrahentow" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgECAAAAACAACAADgCgAAQcAAIQAAQACAAACA=</HashCode>
+      <FileName>ListaKontrahentow.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oknoMenu" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.listaloginow" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAECAAAAACAADAADgCgAAQcAAIQAAQACAAACA=</HashCode>
+      <FileName>listaloginow.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oknoMenu" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.listapracownikow" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgECAAAAACAEDAADgCgAAQcAAIQAAQACAAACA=</HashCode>
+      <FileName>listapracownikow.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oknoMenu" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Projekt.listatowarow" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgECAAAAACAADAQDgCgAAQcAgIQAAQACAAACA=</HashCode>
+      <FileName>listatowarow.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="oknoMenu" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

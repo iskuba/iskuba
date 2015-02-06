@@ -1,9 +1,16 @@
 ﻿Public Class dodajedytujlogin
 
+    Private oknoLog As listaloginow
+    Private id As Long
 
 
-    Public id As Long
+    Public Sub setId(ByVal state As Long)
+        id = state
+    End Sub
 
+    Public Sub setOknoTowar(ByRef state As listaloginow)
+        oknoLog = state
+    End Sub
 
     Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs)
 
@@ -41,13 +48,13 @@
 
 
         If id = 0 Then '' jeżeli ID = 0 to oznacza ze tworzymy nowy rekord
-            login.query.executeQuery("INSERT INTO usr (akronim,haslo,admin,idprc) VALUES ('" & TextBox1.Text & "','" & haslo & "'," & admin & "," & ComboBox1.SelectedValue & ")")
+            oknoLog.returnOknoMenu.returnLogin.returnQuery.executeQuery("INSERT INTO usr (akronim,haslo,admin,idprc) VALUES ('" & TextBox1.Text & "','" & haslo & "'," & admin & "," & ComboBox1.SelectedValue & ")")
             MsgBox("Dodano Rekord !")
-            listaloginow.ListaKontrahentow_Load(sender, e)
+            oknoLog.ListaKontrahentow_Load(sender, e)
         Else
-            login.query.executeQuery("UPDATE  usr set akronim= '" & TextBox1.Text & "',haslo='" & haslo & "',admin=" & admin & ", idprc=" & ComboBox1.SelectedValue & " WHERE id_usr=" & id & "")
+            oknoLog.returnOknoMenu.returnLogin.returnQuery.executeQuery("UPDATE  usr set akronim= '" & TextBox1.Text & "',haslo='" & haslo & "',admin=" & admin & ", idprc=" & ComboBox1.SelectedValue & " WHERE id_usr=" & id & "")
             MsgBox("Rekord Został Zaktualizoany !")
-            listaloginow.ListaKontrahentow_Load(sender, e)
+            oknoLog.ListaKontrahentow_Load(sender, e)
         End If
 
 
@@ -60,7 +67,7 @@
 
         Dim wynik As Object
 
-        wynik = login.query.wykonajZapytanie("SELECT idprc, imie + ' ' + nazwisko as nazwa FROM prckarty")
+        wynik = oknoLog.returnOknoMenu.returnLogin.returnQuery.wykonajZapytanie("SELECT idprc, imie + ' ' + nazwisko as nazwa FROM prckarty")
 
         If wynik.GetType.FullName = GetType(DataTable).FullName Then
 

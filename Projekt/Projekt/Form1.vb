@@ -1,22 +1,25 @@
-﻿
+﻿Public Class login
 
-Public Class login
-
-
-
-
-    Public query As New Connection
-    Public user As New currentUser
-
-
+    Private query As New Connection
+    Private user As New currentUser
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        query.connectionString = _
+        query.SetConnectionString( _
     "Provider=Microsoft.Jet.OLEDB.4.0;User Id= zbud; Password=z; Data source=" & _
-    "" & Application.StartupPath & "\baza\bazaERP.mdb; Jet OLEDB:System Database=" & Application.StartupPath & "\baza\Zabezpieczenia4.mdw;User ID=Paweł;Password=;"
+    "" & Application.StartupPath & "\baza\bazaERP.mdb; Jet OLEDB:System Database=" & Application.StartupPath & "\baza\Zabezpieczenia4.mdw;User ID=Paweł;Password=;")
+
     End Sub
 
+
+
+    Function returnQuery() As Connection
+        Return query
+    End Function
+
+    Function CurrentUser() As currentUser
+        Return user
+    End Function
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
@@ -46,9 +49,11 @@ Public Class login
             tabela = wynik
 
             If tabela.Rows.Count > 0 Then
-                user.idusr = tabela.Rows(0).Item("idprc")
-                user.isadmin = tabela.Rows(0).Item("admin")
-                menuERP.ShowDialog()
+                user.setIDusr(tabela.Rows(0).Item("idprc"))
+                user.setIsAdmin(tabela.Rows(0).Item("admin"))
+                Dim forma As New menuERP
+                forma.setLogin(Me)
+                forma.ShowDialog()
             Else
                 user = Nothing
                 MsgBox("Podane dane są błędne!")

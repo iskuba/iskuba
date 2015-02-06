@@ -1,7 +1,19 @@
 ﻿Public Class dodajedytujtowar
 
 
-    Public id As Long
+    Private oknoTowar As listatowarow
+    Private id As Long
+
+
+    Public Sub setId(ByVal state As Long)
+        id = state
+    End Sub
+
+    Public Sub setOknoTowar(ByRef state As listatowarow)
+        oknoTowar = state
+    End Sub
+
+
 
 
     Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs)
@@ -22,13 +34,14 @@
 
 
         If id = 0 Then '' jeżeli ID = 0 to oznacza ze tworzymy nowy rekord
-            login.query.executeQuery("INSERT INTO twrkarty (twrkod,twrnazwa,jmz) VALUES ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & ComboBox1.Text & "')")
+
+            oknoTowar.returnOknoMenu.returnLogin.returnQuery.executeQuery("INSERT INTO twrkarty (twrkod,twrnazwa,jmz) VALUES ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & ComboBox1.Text & "')")
             MsgBox("Dodano Rekord !")
-            listatowarow.ListaKontrahentow_Load(sender, e)
+            oknoTowar.ListaKontrahentow_Load(sender, e)
         Else
-            login.query.executeQuery("UPDATE  twrKarty set twrkod= '" & TextBox1.Text & "',twrnazwa='" & TextBox2.Text & "',jmz='" & ComboBox1.Text & "' WHERE id=" & id & "")
+            oknoTowar.returnOknoMenu.returnLogin.returnQuery.executeQuery("UPDATE  twrKarty set twrkod= '" & TextBox1.Text & "',twrnazwa='" & TextBox2.Text & "',jmz='" & ComboBox1.Text & "' WHERE id=" & id & "")
             MsgBox("Rekord Został Zaktualizoany !")
-            listatowarow.ListaKontrahentow_Load(sender, e)
+            oknoTowar.ListaKontrahentow_Load(sender, e)
         End If
 
 
@@ -39,7 +52,6 @@
     Private Sub dodajedytujkon_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.SelectedIndex = 0
         If id = 0 Then
-
             Me.Text = " Dodaj Towar"
         Else
             Me.Text = " Edytuj Towar"

@@ -1,5 +1,16 @@
 ﻿Public Class listaloginow
 
+    Private oknoMenu As menuERP
+
+    Public Sub setOknoMenu(ByRef state As menuERP)
+        oknoMenu = state
+    End Sub
+
+    Function returnOknoMenu() As menuERP
+        Return oknoMenu
+    End Function
+
+
     Public Sub ListaKontrahentow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
 
@@ -31,7 +42,7 @@ ControlStyles.DoubleBuffer, True)
 
 
             Dim wynik As Object
-            wynik = login.query.wykonajZapytanie("SELECT * FROM usr")
+            wynik = oknoMenu.returnLogin.returnQuery.wykonajZapytanie("SELECT * FROM usr")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
                 DataGridView1.Columns("id_usr").Visible = False
@@ -63,15 +74,6 @@ ControlStyles.DoubleBuffer, True)
 
         table2.DefaultView.RowFilter = "akronim like '" & TextBox1.Text & "%' "
 
-
-
-
-
-
-
-
-
-
     End Sub
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
         sortuj()
@@ -82,8 +84,9 @@ ControlStyles.DoubleBuffer, True)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        dodajedytujlogin.Close()
-        dodajedytujlogin.Show()
+        Dim forma As New dodajedytujlogin
+        forma.setOknoTowar(Me)
+        forma.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -93,20 +96,22 @@ ControlStyles.DoubleBuffer, True)
 
         Else
             On Error Resume Next
-            dodajedytujprc.Close()
-            dodajedytujlogin.id = DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value
-            dodajedytujlogin.TextBox1.Text = DataGridView1.Item("akronim", DataGridView1.CurrentRow.Index).Value
+            Dim forma As New dodajedytujlogin
+            forma.setOknoTowar(Me)
+
+            forma.setId(DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value)
+            forma.TextBox1.Text = DataGridView1.Item("akronim", DataGridView1.CurrentRow.Index).Value
 
             Dim haslo As Byte()
             haslo = System.Convert.FromBase64String(DataGridView1.Item("haslo", DataGridView1.CurrentRow.Index).Value)
-            dodajedytujlogin.MaskedTextBox1.Text = System.Text.Encoding.UTF8.GetString(haslo)
+            forma.MaskedTextBox1.Text = System.Text.Encoding.UTF8.GetString(haslo)
 
             If DataGridView1.Item("admin", DataGridView1.CurrentRow.Index).Value = 1 Then
-                dodajedytujlogin.CheckBox1.Checked = True
+                forma.CheckBox1.Checked = True
             Else
-                dodajedytujlogin.CheckBox1.Checked = False
+                forma.CheckBox1.Checked = False
             End If
-            dodajedytujlogin.Show()
+            forma.Show()
 
         End If
 
@@ -129,15 +134,12 @@ ControlStyles.DoubleBuffer, True)
                 Else
                     Exit Sub
                 End If
-
-
-
-                login.query.executeQuery("DELETE FROM usr where id_usr=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                oknoMenu.returnLogin.returnQuery.executeQuery("DELETE FROM usr where id_usr=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
                 Me.ListaKontrahentow_Load(sender, e)
 
             End If
         Catch ex As Exception
-            dodajedytujkon.Show()
+
         End Try
     End Sub
 

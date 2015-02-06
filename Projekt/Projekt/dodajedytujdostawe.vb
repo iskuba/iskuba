@@ -1,9 +1,17 @@
 ﻿Public Class dodajedytujdostawe
 
 
+    Private oknoDostaw As listadostaw
+    Private id As Long
 
-    Public id As Long
 
+    Public Sub setId(ByVal state As Long)
+        id = state
+    End Sub
+
+    Public Sub setOknoTowar(ByRef state As listadostaw)
+        oknoDostaw = state
+    End Sub
 
     Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs)
 
@@ -20,11 +28,12 @@
 
 
         If id = 0 Then '' jeżeli ID = 0 to oznacza ze tworzymy nowy rekord
-            login.query.executeQuery("INSERT INTO traelem (idtwr,ilosc,iddost) VALUES (" & ComboBox1.SelectedValue & "," & TextBox1.Text & "," & ComboBox2.SelectedValue & ")")
+
+            oknoDostaw.returnOknoMenu.returnLogin.returnQuery.executeQuery("INSERT INTO traelem (idtwr,ilosc,iddost) VALUES (" & ComboBox1.SelectedValue & "," & TextBox1.Text & "," & ComboBox2.SelectedValue & ")")
             MsgBox("Dodano Rekord !")
             listadostaw.ListaKontrahentow_Load(sender, e)
         Else
-            login.query.executeQuery("UPDATE traelem set idtwr= " & ComboBox1.SelectedValue & ",ilosc=" & TextBox1.Text & ",iddost=" & ComboBox2.SelectedValue & " WHERE id=" & id & "")
+            oknoDostaw.returnOknoMenu.returnLogin.returnQuery.executeQuery("UPDATE traelem set idtwr= " & ComboBox1.SelectedValue & ",ilosc=" & TextBox1.Text & ",iddost=" & ComboBox2.SelectedValue & " WHERE id=" & id & "")
             MsgBox("Rekord Został Zaktualizoany !")
             listadostaw.ListaKontrahentow_Load(sender, e)
         End If
@@ -39,7 +48,7 @@
 
         Dim wynik As Object
 
-        wynik = login.query.wykonajZapytanie("SELECT id, twrkod  FROM twrkarty")
+        wynik = oknoDostaw.returnOknoMenu.returnLogin.returnQuery.wykonajZapytanie("SELECT id, twrkod  FROM twrkarty")
 
         If wynik.GetType.FullName = GetType(DataTable).FullName Then
 
@@ -62,7 +71,7 @@
 
         End If
 
-        wynik = login.query.wykonajZapytanie("SELECT id, nazwa  FROM kntkarty")
+        wynik = oknoDostaw.returnOknoMenu.returnLogin.returnQuery.wykonajZapytanie("SELECT id, nazwa  FROM kntkarty")
 
         If wynik.GetType.FullName = GetType(DataTable).FullName Then
 

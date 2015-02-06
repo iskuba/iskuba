@@ -5,25 +5,31 @@ Imports System.Data.SqlClient
 Public Class Connection
 
 
-    Public connectionString As String
-    Public errorState As String
-    Public errorMessage As String
+    Private connectionString As String
+    Private errorState As String
+    Private errorMessage As String
+    Private info As New info
 
 
 
 
+
+
+
+    Public Sub SetConnectionString(ByVal connection As String)
+        connectionString = connection
+    End Sub
 
     Function wykonajZapytanie(ByVal query As String)
         Try
-        Dim da1 As New System.Data.OleDb.OleDbDataAdapter
-        Dim ds As New DataSet
+            Dim da1 As New System.Data.OleDb.OleDbDataAdapter
+            Dim ds As New DataSet
 
-        da1 = New OleDbDataAdapter(query, connectionString)
-        da1.Fill(ds, "query")
+            da1 = New OleDbDataAdapter(query, connectionString)
+            da1.Fill(ds, "query")
             Return ds.Tables("query")
             errorState = 0
         Catch ex As Exception
-            Dim info As New info
             info.RichTextBox1.Text = ex.Message
             info.ShowDialog()
             errorState = -1
@@ -55,18 +61,12 @@ Public Class Connection
 
                 errorState = 0
             Else
-                Dim info As New info
                 info.RichTextBox1.Text = ex.Message
                 info.ShowDialog()
                 errorState = -1
-
-
             End If
             Return errorState
         End Try
     End Function
-
-
-
 
 End Class

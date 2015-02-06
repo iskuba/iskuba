@@ -1,5 +1,16 @@
 ﻿Public Class listadostaw
 
+    Private oknoMenu As menuERP
+
+    Public Sub setOknoMenu(ByRef state As menuERP)
+        oknoMenu = state
+    End Sub
+
+    Function returnOknoMenu() As menuERP
+        Return oknoMenu
+    End Function
+
+
     Public Sub ListaKontrahentow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
 
@@ -31,7 +42,7 @@ ControlStyles.DoubleBuffer, True)
 
 
             Dim wynik As Object
-            wynik = login.query.wykonajZapytanie("SELECT traelem.id as id ,twrkod,twrnazwa,ilosc,nazwa as Kontrahent,data FROM (traelem INNER JOIN twrkarty ON traelem.idtwr = twrkarty.id) INNER JOIN kntkarty ON traelem.iddost = kntkarty.id")
+            wynik = oknoMenu.returnLogin.returnQuery.wykonajZapytanie("SELECT traelem.id as id ,twrkod,twrnazwa,ilosc,nazwa as Kontrahent,data FROM (traelem INNER JOIN twrkarty ON traelem.idtwr = twrkarty.id) INNER JOIN kntkarty ON traelem.iddost = kntkarty.id")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
                 DataGridView1.Columns("id").Visible = False
@@ -54,21 +65,7 @@ ControlStyles.DoubleBuffer, True)
         table2 = DataGridView1.DataSource
 
 
-
-
-        '' MsgBox("Kod_Towaru " & kod & " and Numer_Zlecenia " & zw & "")
-        ''    MsgBox("Twr_Kod like '" & TextBox1.Text & "%' and NumerZlecenia like '" & TextBox2.Text & "%'and Dostawa like '" & TextBox3.Text & "%' and NumerPrzewodnika like '" & TextBox4.Text & "%' and  " & rw & "")
-
         table2.DefaultView.RowFilter = "twrkod like '" & TextBox1.Text & "%' and twrnazwa like '" & TextBox2.Text & "%' and kontrahent like '" & TextBox3.Text & "%'"
-
-
-
-
-
-
-
-
-
 
     End Sub
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
@@ -80,8 +77,9 @@ ControlStyles.DoubleBuffer, True)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        dodajedytujdostawe.Close()
-        dodajedytujdostawe.Show()
+        Dim forma As New dodajedytujdostawe
+        forma.setOknoTowar(Me)
+        forma.Show()
 
     End Sub
 
@@ -91,10 +89,12 @@ ControlStyles.DoubleBuffer, True)
 
         Else
             On Error Resume Next
-            dodajedytujdostawe.Close()
-            dodajedytujdostawe.id = DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value
-            dodajedytujdostawe.TextBox1.Text = DataGridView1.Item("ilosc", DataGridView1.CurrentRow.Index).Value
-            dodajedytujdostawe.Show()
+            Dim forma As New dodajedytujdostawe
+            forma.setOknoTowar(Me)
+
+            forma.setId(DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value)
+            forma.TextBox1.Text = DataGridView1.Item("ilosc", DataGridView1.CurrentRow.Index).Value
+            forma.Show()
 
         End If
 
@@ -119,9 +119,7 @@ ControlStyles.DoubleBuffer, True)
                 End If
 
 
-
-
-                login.query.executeQuery("DELETE FROM traelem where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                oknoMenu.returnLogin.returnQuery.executeQuery("DELETE FROM traelem where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
                 Me.ListaKontrahentow_Load(sender, e)
 
 
@@ -129,7 +127,8 @@ ControlStyles.DoubleBuffer, True)
 
             End If
         Catch ex As Exception
-            dodajedytujkon.Show()
+
+
         End Try
     End Sub
 

@@ -2,6 +2,15 @@
 
 Public Class listatowarow
 
+    Private oknoMenu As menuERP
+
+    Public Sub setOknoMenu(ByRef state As menuERP)
+        oknoMenu = state
+    End Sub
+
+    Function returnOknoMenu() As menuERP
+        Return oknoMenu
+    End Function
 
     Public Sub ListaKontrahentow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
@@ -34,7 +43,9 @@ ControlStyles.DoubleBuffer, True)
 
 
             Dim wynik As Object
-            wynik = login.query.wykonajZapytanie("SELECT twrkarty.id as id,twrkod,twrnazwa,jmz,sum(ilosc) as iloscDostaw  FROM twrkarty LEFT JOIN traelem ON twrkarty.id = traelem.idtwr GROUP BY twrkarty.id,twrkod,twrnazwa,jmz;")
+
+
+            wynik = oknoMenu.returnLogin.returnQuery.wykonajZapytanie("SELECT twrkarty.id as id,twrkod,twrnazwa,jmz,sum(ilosc) as iloscDostaw  FROM twrkarty LEFT JOIN traelem ON twrkarty.id = traelem.idtwr GROUP BY twrkarty.id,twrkod,twrnazwa,jmz;")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
                 DataGridView1.Columns("id").Visible = False
@@ -57,22 +68,7 @@ ControlStyles.DoubleBuffer, True)
         Dim table2 As DataTable
         table2 = DataGridView1.DataSource
 
-
-
-
-        '' MsgBox("Kod_Towaru " & kod & " and Numer_Zlecenia " & zw & "")
-        ''    MsgBox("Twr_Kod like '" & TextBox1.Text & "%' and NumerZlecenia like '" & TextBox2.Text & "%'and Dostawa like '" & TextBox3.Text & "%' and NumerPrzewodnika like '" & TextBox4.Text & "%' and  " & rw & "")
-
         table2.DefaultView.RowFilter = "twrkod like '" & TextBox1.Text & "%' and twrnazwa like '" & TextBox2.Text & "%' "
-
-
-
-
-
-
-
-
-
 
     End Sub
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
@@ -84,8 +80,9 @@ ControlStyles.DoubleBuffer, True)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        dodajedytujtowar.Close()
-        dodajedytujtowar.Show()
+        Dim forma As New dodajedytujtowar
+        forma.setOknoTowar(Me)
+        forma.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -95,12 +92,13 @@ ControlStyles.DoubleBuffer, True)
 
         Else
             On Error Resume Next
-            dodajedytujtowar.Close()
-            dodajedytujtowar.id = DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value
-            dodajedytujtowar.TextBox1.Text = DataGridView1.Item("twrkod", DataGridView1.CurrentRow.Index).Value
-            dodajedytujtowar.TextBox2.Text = DataGridView1.Item("twrnazwa", DataGridView1.CurrentRow.Index).Value
-            dodajedytujtowar.ComboBox1.Text = DataGridView1.Item("jmz", DataGridView1.CurrentRow.Index).Value
-            dodajedytujtowar.Show()
+            Dim forma As New dodajedytujtowar
+            forma.setOknoTowar(Me)
+            forma.setId(DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value)
+            forma.TextBox1.Text = DataGridView1.Item("twrkod", DataGridView1.CurrentRow.Index).Value
+            forma.TextBox2.Text = DataGridView1.Item("twrnazwa", DataGridView1.CurrentRow.Index).Value
+            forma.ComboBox1.Text = DataGridView1.Item("jmz", DataGridView1.CurrentRow.Index).Value
+            forma.Show()
 
         End If
 
@@ -126,7 +124,7 @@ ControlStyles.DoubleBuffer, True)
 
 
                 Dim wynik As Object
-                wynik = login.query.wykonajZapytanie("SELECT * FROM  TraElem where idtwr =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                wynik = oknoMenu.returnLogin.returnQuery.wykonajZapytanie("SELECT * FROM  TraElem where idtwr =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
 
                 If wynik.GetType.FullName = GetType(DataTable).FullName Then
                     Dim tabela As DataTable
@@ -137,7 +135,7 @@ ControlStyles.DoubleBuffer, True)
 
                         MsgBox("Istnieją wiązania z wybranym towarem. Usuwanie rekordu zostanie anulowane !")
                     Else
-                        login.query.executeQuery("DELETE FROM twrkarty where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                        oknoMenu.returnLogin.returnQuery.executeQuery("DELETE FROM twrkarty where id=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
                         Me.ListaKontrahentow_Load(sender, e)
                     End If
 

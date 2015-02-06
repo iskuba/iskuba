@@ -1,5 +1,18 @@
 ﻿Public Class listapracownikow
 
+
+    Private oknoMenu As menuERP
+
+    Public Sub setOknoMenu(ByRef state As menuERP)
+        oknoMenu = state
+    End Sub
+
+    Function returnOknoMenu() As menuERP
+        Return oknoMenu
+    End Function
+
+
+
     Public Sub ListaKontrahentow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
 
@@ -31,7 +44,7 @@ ControlStyles.DoubleBuffer, True)
 
 
             Dim wynik As Object
-            wynik = login.query.wykonajZapytanie("SELECT * FROM prckarty")
+            wynik = oknoMenu.returnLogin.returnQuery.wykonajZapytanie("SELECT * FROM prckarty")
             If wynik.GetType.FullName = GetType(DataTable).FullName Then
                 DataGridView1.DataSource = wynik
                 DataGridView1.Columns("idprc").Visible = False
@@ -79,8 +92,10 @@ ControlStyles.DoubleBuffer, True)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        dodajedytujprc.Close()
-        dodajedytujprc.Show()
+        Dim forama As New dodajedytujprc
+        forama.setOknoTowar(Me)
+        forama.Show()
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -90,20 +105,24 @@ ControlStyles.DoubleBuffer, True)
 
         Else
             On Error Resume Next
-            dodajedytujprc.Close()
-            dodajedytujprc.id = DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value
-            dodajedytujprc.TextBox1.Text = DataGridView1.Item("imie", DataGridView1.CurrentRow.Index).Value
-            dodajedytujprc.TextBox2.Text = DataGridView1.Item("miejscowosc", DataGridView1.CurrentRow.Index).Value
+            Dim forama As New dodajedytujprc
+            forama.setOknoTowar(Me)
+
+
+
+            forama.setId(DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value)
+            forama.TextBox1.Text = DataGridView1.Item("imie", DataGridView1.CurrentRow.Index).Value
+            forama.TextBox2.Text = DataGridView1.Item("miejscowosc", DataGridView1.CurrentRow.Index).Value
             Dim kod As String
 
             kod = DataGridView1.Item("kodpocztowy", DataGridView1.CurrentRow.Index).Value
-            dodajedytujprc.TextBox3.Text = kod(0)
-            dodajedytujprc.TextBox4.Text = kod(1)
-            dodajedytujprc.TextBox5.Text = DataGridView1.Item("telefon", DataGridView1.CurrentRow.Index).Value
-            dodajedytujprc.TextBox6.Text = DataGridView1.Item("nrlokalu", DataGridView1.CurrentRow.Index).Value
-            dodajedytujprc.TextBox7.Text = DataGridView1.Item("ulica", DataGridView1.CurrentRow.Index).Value
-            dodajedytujprc.TextBox8.Text = DataGridView1.Item("nazwisko", DataGridView1.CurrentRow.Index).Value
-            dodajedytujprc.Show()
+            forama.TextBox3.Text = kod(0)
+            forama.TextBox4.Text = kod(1)
+            forama.TextBox5.Text = DataGridView1.Item("telefon", DataGridView1.CurrentRow.Index).Value
+            forama.TextBox6.Text = DataGridView1.Item("nrlokalu", DataGridView1.CurrentRow.Index).Value
+            forama.TextBox7.Text = DataGridView1.Item("ulica", DataGridView1.CurrentRow.Index).Value
+            forama.TextBox8.Text = DataGridView1.Item("nazwisko", DataGridView1.CurrentRow.Index).Value
+            forama.Show()
 
         End If
 
@@ -129,7 +148,7 @@ ControlStyles.DoubleBuffer, True)
 
 
                 Dim wynik As Object
-                wynik = login.query.wykonajZapytanie("SELECT idprc FROM  usr where idprc =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & " UNION ALL SELECT idpracownika FROM TraNag Where idpracownika =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                wynik = oknoMenu.returnLogin.returnQuery.wykonajZapytanie("SELECT idprc FROM  usr where idprc =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & " UNION ALL SELECT idpracownika FROM TraNag Where idpracownika =" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
 
                 If wynik.GetType.FullName = GetType(DataTable).FullName Then
                     Dim tabela As DataTable
@@ -141,7 +160,7 @@ ControlStyles.DoubleBuffer, True)
                         MsgBox("Istnieją wiązania z wybranym pracownikiem. Usuwanie rekordu zostanie anulowane !")
                     Else
 
-                        login.query.executeQuery("DELETE FROM prckarty where idprc=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
+                        oknoMenu.returnLogin.returnQuery.executeQuery("DELETE FROM prckarty where idprc=" & DataGridView1.Item(0, DataGridView1.CurrentRow.Index).Value & "")
                         Me.ListaKontrahentow_Load(sender, e)
                     End If
 
@@ -150,7 +169,7 @@ ControlStyles.DoubleBuffer, True)
 
             End If
         Catch ex As Exception
-            dodajedytujkon.Show()
+
         End Try
     End Sub
 

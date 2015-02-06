@@ -1,8 +1,17 @@
 ﻿Public Class dodajedytujprc
 
 
-    Public id As Long
+    Private oknoPrc As listapracownikow
+    Private id As Long
 
+
+    Public Sub setId(ByVal state As Long)
+        id = state
+    End Sub
+
+    Public Sub setOknoTowar(ByRef state As listapracownikow)
+        oknoPrc = state
+    End Sub
 
     Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
 
@@ -27,13 +36,13 @@
 
 
         If id = 0 Then '' jeżeli ID = 0 to oznacza ze tworzymy nowy rekord
-            login.query.executeQuery("INSERT INTO prckarty (imie,miejscowosc,kodpocztowy,telefon,nrlokalu,ulica,nazwisko) VALUES ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "-" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "','" & TextBox8.Text & "')")
+            oknoPrc.returnOknoMenu.returnLogin.returnQuery.executeQuery("INSERT INTO prckarty (imie,miejscowosc,kodpocztowy,telefon,nrlokalu,ulica,nazwisko) VALUES ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "-" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "','" & TextBox8.Text & "')")
             MsgBox("Dodano Rekord !")
-            listapracownikow.ListaKontrahentow_Load(sender, e)
+            oknoPrc.ListaKontrahentow_Load(sender, e)
         Else
-            login.query.executeQuery("UPDATE  prckarty set imie= '" & TextBox1.Text & "',miejscowosc='" & TextBox2.Text & "',kodpocztowy='" & TextBox3.Text & "-" & TextBox4.Text & "',telefon='" & TextBox5.Text & "',nrlokalu='" & TextBox6.Text & "',ulica='" & TextBox7.Text & "' ,nazwisko='" & TextBox8.Text & "' WHERE idprc=" & id & "")
+            oknoPrc.returnOknoMenu.returnLogin.returnQuery.executeQuery("UPDATE  prckarty set imie= '" & TextBox1.Text & "',miejscowosc='" & TextBox2.Text & "',kodpocztowy='" & TextBox3.Text & "-" & TextBox4.Text & "',telefon='" & TextBox5.Text & "',nrlokalu='" & TextBox6.Text & "',ulica='" & TextBox7.Text & "' ,nazwisko='" & TextBox8.Text & "' WHERE idprc=" & id & "")
             MsgBox("Rekord Został Zaktualizoany !")
-            listapracownikow.ListaKontrahentow_Load(sender, e)
+            oknoPrc.ListaKontrahentow_Load(sender, e)
         End If
 
 
@@ -59,7 +68,6 @@
 
     Private Sub dodajedytujkon_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If id = 0 Then
-
             Me.Text = " Dodaj Pracownika "
         Else
             Me.Text = " Edytuj Pracownika "
